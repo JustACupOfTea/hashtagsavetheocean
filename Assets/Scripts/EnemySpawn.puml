@@ -1,0 +1,13 @@
+@startuml
+class EnemySpawn {
+    + enemy : GameObject
+    + spawnChance : int
+    + spawnInterval : float
+    - spawnedEnemy : GameObject
+    - timePassedSinceLastSpawnTry : float = 0
+    - Start() : void
+    - Update() : void
+    - SpawnEnemy(position:Vector3) : void
+}
+MonoBehaviour <|-- EnemySpawn
+@enduml

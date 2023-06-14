@@ -1,0 +1,9 @@
+@startuml
+class AI_NPC {
+    - navMeshAgent : NavMeshAgent
+    + reachedTarget : bool
+    - Start() : void
+    - Update() : void
+}
+MonoBehaviour <|-- AI_NPC
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+class ActionBasedControllerManager {
+    + <<const>> k_UpdateOrder : int
+    - m_ManipulationInteractionGroup : XRInteractionGroup
+    - m_DirectInteractor : XRDirectInteractor
+    - m_RayInteractor : XRRayInteractor
+    - m_TeleportInteractor : XRRayInteractor
+    - m_TeleportModeActivate : InputActionReference
+    - m_TeleportModeCancel : InputActionReference
+    - m_Turn : InputActionReference
+    - m_SnapTurn : InputActionReference
+    - m_Move : InputActionReference
+    - m_SmoothMotionEnabled : bool
+    - m_SmoothTurnEnabled : bool
+    + smoothMotionEnabled : bool <<get>> <<set>>
+    + smoothTurnEnabled : bool <<get>> <<set>>
+    - m_Teleporting : bool
+    {static} <<readonly>> - s_GroupMembers : List<IXRGroupMember>
+    - SetupInteractorEvents() : void
+    - TeardownInteractorEvents() : void
+    - OnStartTeleport(context:InputAction.CallbackContext) : void
+    - OnCancelTeleport(context:InputAction.CallbackContext) : void
+    - RayInteractorUpdate() : void
+    - OnRaySelectEntered(args:SelectEnterEventArgs) : void
+    - OnRaySelectExited(args:SelectExitEventArgs) : void
+    # Awake() : void
+    # OnEnable() : void
+    # OnDisable() : void
+    # Start() : void
+    - OnAfterInteractionEvents() : IEnumerator
+    - UpdateLocomotionActions() : void
+    - DisableLocomotionActions() : void
+    {static} - SetEnabled(actionReference:InputActionReference, enabled:bool) : void
+    {static} - EnableAction(actionReference:InputActionReference) : void
+    {static} - DisableAction(actionReference:InputActionReference) : void
+    {static} - GetInputAction(actionReference:InputActionReference) : InputAction
+}
+MonoBehaviour <|-- ActionBasedControllerManager
+@enduml

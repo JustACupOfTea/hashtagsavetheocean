@@ -1,0 +1,13 @@
+@startuml
+class GazeInputManager {
+    <<const>> - k_EyeGazeLayoutName : string = "EyeGaze"
+    - m_FallbackIfEyeTrackingUnavailable : bool = true
+    + fallbackIfEyeTrackingUnavailable : bool <<get>> <<set>>
+    - m_EyeTrackingDeviceFound : bool
+    # Awake() : void
+    # OnDestroy() : void
+    - OnDeviceConnected(inputDevice:InputDevice) : void
+    - OnDeviceChange(device:InputSystem.InputDevice, change:InputDeviceChange) : void
+}
+MonoBehaviour <|-- GazeInputManager
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class CharacterMovementHelp {
+    - m_XROrigin : XROrigin
+    - m_CharacterController : CharacterController
+    - driver : CharacterControllerDriver
+    - Start() : void
+    - Update() : void
+    # <<virtual>> UpdateCharacterController() : void
+}
+MonoBehaviour <|-- CharacterMovementHelp
+@enduml

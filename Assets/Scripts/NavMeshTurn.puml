@@ -1,0 +1,6 @@
+@startuml
+class NavMeshTurn {
+    - OnTriggerEnter(other:Collider) : void
+}
+MonoBehaviour <|-- NavMeshTurn
+@enduml

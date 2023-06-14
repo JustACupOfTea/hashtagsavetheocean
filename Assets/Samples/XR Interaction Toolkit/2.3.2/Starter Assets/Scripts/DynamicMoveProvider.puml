@@ -1,0 +1,25 @@
+@startuml
+class DynamicMoveProvider {
+    - m_HeadTransform : Transform
+    + headTransform : Transform <<get>> <<set>>
+    - m_LeftControllerTransform : Transform
+    + leftControllerTransform : Transform <<get>> <<set>>
+    - m_RightControllerTransform : Transform
+    + rightControllerTransform : Transform <<get>> <<set>>
+    - m_LeftHandMovementDirection : MovementDirection
+    + leftHandMovementDirection : MovementDirection <<get>> <<set>>
+    - m_RightHandMovementDirection : MovementDirection
+    + rightHandMovementDirection : MovementDirection <<get>> <<set>>
+    - m_CombinedTransform : Transform
+    - m_LeftMovementPose : Pose
+    - m_RightMovementPose : Pose
+    # <<override>> Awake() : void
+    # <<override>> ComputeDesiredMove(input:Vector2) : Vector3
+}
+enum MovementDirection {
+    HeadRelative,
+    HandRelative,
+}
+ActionBasedContinuousMoveProvider <|-- DynamicMoveProvider
+DynamicMoveProvider +-- MovementDirection
+@enduml

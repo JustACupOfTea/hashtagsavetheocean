@@ -1,0 +1,15 @@
+@startuml
+!include .\Scripts\AI_NPC.puml
+!include .\Scripts\CharacterMovementHelp.puml
+!include .\Scripts\EnemySpawn.puml
+!include .\Scripts\LevelChange.puml
+!include .\Scripts\NavMeshTurn.puml
+!include .\Scripts\NPCDespawn.puml
+!include .\ThirdParty\LowPolyWater_Pack\Scripts\LowPolyWater.puml
+!include .\ThirdParty\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.puml
+!include .\Samples\XR Interaction Toolkit\2.3.2\Starter Assets\Scripts\ActionBasedControllerManager.puml
+!include .\Samples\XR Interaction Toolkit\2.3.2\Starter Assets\Scripts\DynamicMoveProvider.puml
+!include .\Samples\XR Interaction Toolkit\2.3.2\Starter Assets\Scripts\GazeInputManager.puml
+!include .\Samples\XR Interaction Toolkit\2.3.2\Starter Assets\Scripts\XRPokeFollowAffordance.puml
+!include .\Samples\XR Interaction Toolkit\2.3.2\Starter Assets\Scripts\PokeStation\IncrementUIText.puml
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+class GeneratePlane {
+    + objectName : string
+    + widthSegments : int = 1
+    + heightSegments : int = 1
+    + planeWidth : float = 1.0f
+    + planeHeight : float = 1.0f
+    + addCollider : bool = false
+    + material : Material
+    {static} - cam : Camera
+    {static} - lastUsedCam : Camera
+    + {static} assetSaveLocation : string = "Assets/Low Poly Water/Plane Meshes/"
+    {static} - CreateWizard() : void
+    - OnWizardUpdate() : void
+    - OnWizardCreate() : void
+}
+ScriptableWizard <|-- GeneratePlane
+@enduml

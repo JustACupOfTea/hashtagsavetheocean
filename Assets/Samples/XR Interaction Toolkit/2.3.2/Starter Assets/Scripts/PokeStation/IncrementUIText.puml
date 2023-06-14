@@ -1,0 +1,10 @@
+@startuml
+class IncrementUIText {
+    - m_Text : Text
+    + text : Text <<get>> <<set>>
+    - m_Count : int
+    # Awake() : void
+    + IncrementText() : void
+}
+MonoBehaviour <|-- IncrementUIText
+@enduml

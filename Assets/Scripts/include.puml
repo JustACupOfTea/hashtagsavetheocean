@@ -1,0 +1,8 @@
+@startuml
+!include .\\AI_NPC.puml
+!include .\\CharacterMovementHelp.puml
+!include .\\EnemySpawn.puml
+!include .\\LevelChange.puml
+!include .\\NavMeshTurn.puml
+!include .\\NPCDespawn.puml
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+class XRPokeFollowAffordance {
+    - m_PokeFollowTransform : Transform
+    + pokeFollowTransform : Transform <<get>> <<set>>
+    - m_SmoothingSpeed : float = 16f
+    + smoothingSpeed : float <<get>> <<set>>
+    - m_ReturnToInitialPosition : bool = true
+    + returnToInitialPosition : bool <<get>> <<set>>
+    - m_ApplyIfChildIsTarget : bool = true
+    + applyIfChildIsTarget : bool <<get>> <<set>>
+    - m_ClampToMaxDistance : bool
+    + clampToMaxDistance : bool <<get>> <<set>>
+    - m_MaxDistance : float
+    + maxDistance : float <<get>> <<set>>
+    - m_PokeDataProvider : IPokeStateDataProvider
+    <<readonly>> - m_TransformTweenableVariable : Vector3TweenableVariable
+    <<readonly>> - m_BindingsGroup : BindingsGroup
+    - m_InitialPosition : Vector3
+    - m_IsFirstFrame : bool
+    # Awake() : void
+    # Start() : void
+    # OnDestroy() : void
+    # LateUpdate() : void
+    - OnTransformTweenableVariableUpdated(position:float3) : void
+    - OnPokeStateDataUpdated(data:PokeStateData) : void
+}
+MonoBehaviour <|-- XRPokeFollowAffordance
+@enduml

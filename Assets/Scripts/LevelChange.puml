@@ -1,0 +1,9 @@
+@startuml
+class LevelChange {
+    - level : string
+    - Start() : void
+    - Update() : void
+    + ChangeLevel() : void
+}
+MonoBehaviour <|-- LevelChange
+@enduml

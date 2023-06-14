@@ -1,0 +1,17 @@
+@startuml
+class LowPolyWater {
+    + waveHeight : float = 0.5f
+    + waveFrequency : float = 0.5f
+    + waveLength : float = 0.75f
+    + waveOriginPosition : Vector3
+    - meshFilter : MeshFilter
+    - mesh : Mesh
+    - vertices : Vector3[]
+    - Awake() : void
+    - Start() : void
+    - CreateMeshLowPoly(mf:MeshFilter) : MeshFilter
+    - Update() : void
+    - GenerateWaves() : void
+}
+MonoBehaviour <|-- LowPolyWater
+@enduml

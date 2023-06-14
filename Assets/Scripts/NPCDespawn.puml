@@ -1,0 +1,6 @@
+@startuml
+class NPCDespawn {
+    - OnTriggerEnter(other:Collider) : void
+}
+MonoBehaviour <|-- NPCDespawn
+@enduml
