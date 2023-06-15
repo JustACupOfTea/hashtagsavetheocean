@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4354052765719470511}
   - component: {fileID: 6664040655973257759}
   - component: {fileID: 2240778884275961430}
-  - component: {fileID: 3190313991500301074}
+  - component: {fileID: 886698845724703766}
   m_Layer: 0
   m_Name: Garbage 2
   m_TagString: Untagged
@@ -131,7 +131,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &2240778884275961430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,8 +279,8 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!65 &3190313991500301074
-BoxCollider:
+--- !u!64 &886698845724703766
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -289,6 +289,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.031932652, y: 0.03193266, z: 0.038891472}
-  m_Center: {x: 0, y: -1.3423194e-16, z: 0.009445735}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 5f9346d3fe34cc64d90f5b763f5538e7, type: 3}

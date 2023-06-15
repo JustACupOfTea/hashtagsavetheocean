@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 7038216034746411111}
   - component: {fileID: 7620134415783033859}
   - component: {fileID: 1790130518545352531}
-  - component: {fileID: 1770896050334771253}
   - component: {fileID: 9014703853165792270}
   - component: {fileID: 4369487554050510568}
   - component: {fileID: 535085332224061521}
-  - component: {fileID: 5202957458488571887}
+  - component: {fileID: 8825912802440268712}
   m_Layer: 0
   m_Name: Garbage 1
   m_TagString: Untagged
@@ -105,20 +104,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &1770896050334771253
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2538656395578795460}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.039863914, z: 0.118724324}
-  m_Center: {x: 0, y: 0.010322897, z: 0.049362164}
+  m_CollisionDetection: 2
 --- !u!114 &9014703853165792270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,8 +278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e43bacdc663d549881420c49d20d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &5202957458488571887
-BoxCollider:
+--- !u!64 &8825912802440268712
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -302,6 +288,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: -0.03, y: 0.039863914, z: -0.06}
-  m_Center: {x: 0.03, y: 0.010322897, z: 0.0789}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 80d05678838e2ee4d864223900b9bc24, type: 3}

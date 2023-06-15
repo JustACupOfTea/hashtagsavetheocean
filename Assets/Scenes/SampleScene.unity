@@ -109,7 +109,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 50
+    agentSlope: 60
     agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -4775,8 +4775,8 @@ GameObject:
   m_Name: Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1724248167
 MonoBehaviour:

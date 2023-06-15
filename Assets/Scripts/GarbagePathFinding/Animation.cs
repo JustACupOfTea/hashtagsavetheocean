@@ -8,8 +8,7 @@ public class Animation : MonoBehaviour
 {
     public GameObject aStar;
     public Pathfinding gridPath;
-
-    private bool _isMovingForward = true;
+    
     private int _currentPathID = 0;
     private int _nextPathID = 1;
     private float _rotateSpeed = 3.0f;
@@ -26,14 +25,7 @@ public class Animation : MonoBehaviour
         // Quit if there is no path
         if (gridPath.path.Count <= 1)
             return;
-        
-        if (_isMovingForward)
-        {
-            WalkForward();
-            // Check for a directional change
-            if (_currentPathID == gridPath.path.Count - 2)
-                _isMovingForward = !_isMovingForward;
-        }
+        WalkForward();
     }
 
     void WalkForward()

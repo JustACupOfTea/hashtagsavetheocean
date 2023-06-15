@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9014703853165792270}
   - component: {fileID: 4369487554050510568}
   - component: {fileID: 535085332224061521}
+  - component: {fileID: 2767847896216971084}
   m_Layer: 0
   m_Name: Garbage
   m_TagString: Untagged
@@ -115,7 +116,7 @@ BoxCollider:
   m_GameObject: {fileID: 2538656395578795460}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.020000005, z: 0.18951043}
   m_Center: {x: 0, y: -3.0111087e-16, z: 0.084755205}
@@ -292,3 +293,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e43bacdc663d549881420c49d20d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &2767847896216971084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2538656395578795460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 585cfbbc8dc391f49883117b0690352d, type: 3}

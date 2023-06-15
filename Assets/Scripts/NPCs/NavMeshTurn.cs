@@ -9,7 +9,7 @@ public class NavMeshTurn : MonoBehaviour
     public GameObject[] garbage;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "NPC")
+        if (other.gameObject.tag == "NPC" && !other.GetComponent<AI_NPC>().reachedTarget)
         {
             AI_NPC ai = other.GetComponent<AI_NPC>();
             other.GetComponent<NavMeshAgent>().SetDestination(transform.parent.transform.position);
