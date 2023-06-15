@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2538656395578795460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,8 +116,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.05519466, y: 0.039863925, z: 0.11872435}
-  m_Center: {x: 0.015150756, y: 0.0103229, z: 0.049362175}
+  m_Size: {x: 0.05519466, y: 0.039863914, z: 0.118724324}
+  m_Center: {x: 0.015150756, y: 0.010322897, z: 0.049362164}
 --- !u!114 &9014703853165792270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: OnGrab
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   m_SelectExited:
