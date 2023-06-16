@@ -22,7 +22,8 @@ public class EnemySpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!spawnedEnemy && timePassedSinceLastSpawnTry>spawnInterval)
+        // Only try to spawn enemy when -> No current enemy ->Interval has passed -> Boss fight didn't start
+        if (!spawnedEnemy && timePassedSinceLastSpawnTry>spawnInterval && !PlayerStats.instance.bossFightTriggered)
         {
             timePassedSinceLastSpawnTry = 0;
             int randomNumber1 = Random.Range(0, Mathf.RoundToInt(100/spawnChance));

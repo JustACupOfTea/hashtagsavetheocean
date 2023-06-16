@@ -14,7 +14,7 @@ public class HealthBar : MonoBehaviour
 
     public void SetMaxHealth()
     {
-        slider.maxValue = PlayerStats.instance.maxHealth; //for now player health later trash destroyed in ocean
+        slider.maxValue = PlayerStats.instance.maxHealth;
         slider.value = PlayerStats.instance.playerHealth;
 
         fill.color = gradient.Evaluate(1f);
@@ -23,8 +23,6 @@ public class HealthBar : MonoBehaviour
     {
     
      slider.value = PlayerStats.instance.playerHealth;
-   
-     
      fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 

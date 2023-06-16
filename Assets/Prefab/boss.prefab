@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1154229632722755326}
   - component: {fileID: 1154229632722755321}
   - component: {fileID: 1154229632722755325}
-  - component: {fileID: 1154229632722755266}
   - component: {fileID: 1575693818911822394}
   - component: {fileID: 5799194262230666239}
+  - component: {fileID: 152613237294995925}
   m_Layer: 0
   m_Name: boss
   m_TagString: NPC
@@ -121,21 +121,8 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 9.62
   m_BaseOffset: 1.05
-  m_WalkableMask: 7
+  m_WalkableMask: 29
   m_ObstacleAvoidanceType: 4
---- !u!114 &1154229632722755266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154229632722755322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d625c473989224bb3d048e77d386af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reachedTarget: 0
 --- !u!54 &1575693818911822394
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -168,6 +155,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &152613237294995925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154229632722755322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc6fe7032a02c834d9a0f57a6ce98c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prey: {fileID: 0}
 --- !u!1001 &8649666401829096806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 570cc8597d7f12f4ba011103311ed58a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 570cc8597d7f12f4ba011103311ed58a,
         type: 3}

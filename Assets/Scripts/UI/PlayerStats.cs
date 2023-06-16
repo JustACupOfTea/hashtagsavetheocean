@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
+    
     public static PlayerStats instance;
-    [field: SerializeField]
+    
     public int playerHealth
     {
         private set;
@@ -19,27 +20,30 @@ public class PlayerStats : MonoBehaviour
         private set;
         get;
     }
+
+    public bool bossFightTriggered
+    {
+        private set;
+        get;
+    }
+    
     [SerializeField] private string level;
 
-   [SerializeField] HealthBar hp;
+   [SerializeField] HealthBar hpBar;
     public int maxHealth = 100;
-    public bool BossFightTriggered = false;
-
+    public GameObject boss;
+    public Vector3 bossSpawnPoint;
     
-    public Slider slider;
-    public Gradient gradient;
-    public Image fill;
     // Start is called before the first frame update
     void Awake()
     {
         if (instance == null)
         {
-            instance = new PlayerStats();
+            instance = this;
             score = 0;
             playerHealth = 1;
-            
-            hp.SetMaxHealth();
-         
+            bossFightTriggered = false;
+            hpBar.SetMaxHealth();
         }
         
 
@@ -54,9 +58,11 @@ public class PlayerStats : MonoBehaviour
     public void ReduceHealth(int reduceBy)
     {
         playerHealth -= reduceBy;
-        hp.SetHealth(playerHealth);
-        if (playerHealth <= 0 && BossFightTriggered)
+        hpBar.SetHealth(playerHealth);
+        // Check if player died
+        if (playerHealth <= 0 && bossFightTriggered)
         {
+            playerHealth = 0;
             SceneManager.LoadSceneAsync(level);
         }
 
@@ -64,21 +70,27 @@ public class PlayerStats : MonoBehaviour
 
       public void IncreaseHealth(int increaseBy)
     {
-        playerHealth += increaseBy;
-       
-        hp.SetHealth(playerHealth);
+        // Check if the boss fight started
+        if (!bossFightTriggered)
+        {
+            playerHealth += increaseBy;
+            hpBar.SetHealth(playerHealth);
+        }
 
-        
-
+        // Check if the boss fight should start
+        if (playerHealth >= maxHealth && !bossFightTriggered)
+        {
+            //Spawn boss
+            boss.GetComponent<AI_Boss>().prey = transform.parent.gameObject;
+            Instantiate(boss, bossSpawnPoint, Quaternion.identity);
+            
+            playerHealth = maxHealth;
+            bossFightTriggered = true;
+        }
     }
 
      public void IncreaseScore(int increaseBy)
    {
       score += increaseBy;
-      Debug.Log("Score: " + score);
    }
-
-    
-
-
 }
