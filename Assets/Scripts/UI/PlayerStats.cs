@@ -22,7 +22,8 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (instance == null)
+            instance = new PlayerStats();
     }
 
     // Update is called once per frame

@@ -8,27 +8,18 @@ using UnityEngine.UI;
 public class IncreaseScore : MonoBehaviour
 {
 
-     [field: SerializeField]
-
-    public int score
-    {
-        private set;
-        get;
-    }
-   
-     public Text scoreText;
-     private int startScore = 0;
+    public Text scoreText;
     // Start is called before the first frame update
     void Start()
     {
         
-        scoreText.text = "Score: " + startScore.ToString();
+        scoreText.text = "Score: " + PlayerStats.instance.score.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-     scoreText.text = "Score: " + startScore.ToString();
+     scoreText.text = "Score: " + PlayerStats.instance.score.ToString();
     }
 
    
