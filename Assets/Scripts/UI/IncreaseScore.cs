@@ -13,13 +13,13 @@ public class IncreaseScore : MonoBehaviour
     void Start()
     {
         
-        scoreText.text = "Score: " + PlayerStats.instance.score.ToString();
+        scoreText.text = "Score: " + PlayerStats.instance.score;
     }
 
     // Update is called once per frame
     void Update()
     {
-     scoreText.text = "Score: " + PlayerStats.instance.score.ToString();
+     scoreText.text = "Score: " + PlayerStats.instance.score;
     }
 
    

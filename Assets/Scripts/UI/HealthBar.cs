@@ -5,12 +5,27 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+   
     public Slider slider;
+    public Gradient gradient;
+    public Image fill;
 
-    public void SetHealth()
+    
+
+    public void SetMaxHealth()
     {
-    float health = PlayerStats.instance.playerHealth;
-     slider.value = health;
+        slider.maxValue = PlayerStats.instance.maxHealth; //for now player health later trash destroyed in ocean
+        slider.value = PlayerStats.instance.playerHealth;
+
+        fill.color = gradient.Evaluate(1f);
+    }
+    public void SetHealth(float playerHealth)
+    {
+    
+     slider.value = PlayerStats.instance.playerHealth;
+   
+     
+     fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 
 

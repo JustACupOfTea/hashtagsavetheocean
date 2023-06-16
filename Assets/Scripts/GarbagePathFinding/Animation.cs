@@ -52,6 +52,7 @@ public class Animation : MonoBehaviour
             else
             {
                 Destroy(gameObject);
+                PlayerStats.instance.IncreaseHealth(10);
             }
             
         }
