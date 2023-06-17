@@ -45,8 +45,6 @@ public class PlayerStats : MonoBehaviour
             bossFightTriggered = false;
             hpBar.SetMaxHealth();
         }
-        boss.GetComponent<AI_Boss>().prey = transform.parent.gameObject;
-        Instantiate(boss, bossSpawnPoint, Quaternion.identity);
     }
 
     // Update is called once per frame
