@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Garbage
+  - Sword
   layers:
   - Default
   - TransparentFX
