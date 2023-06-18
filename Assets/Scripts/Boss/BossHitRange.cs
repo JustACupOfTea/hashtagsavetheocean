@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class BossHitRange : MonoBehaviour
 {
+     public static BossHitRange instance;
     [SerializeField] public float damageInterval;
     [SerializeField] public int damageToPlayer;
-    private bool hittingPlayer;
+    public bool hittingPlayer;
     private float timePassedSinceLastSpawnTry = 0;
-
+  
+  void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+         
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         hittingPlayer = false;
+        
     }
 
     // Update is called once per frame
@@ -32,6 +42,7 @@ public class BossHitRange : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             hittingPlayer = true;
+          
         }
         
         

@@ -5,11 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class BossStats : MonoBehaviour
 {
+    public static BossStats instance;
     [SerializeField] public int bossHealth;
 
         [SerializeField] private string level;
+        
     
     // Start is called before the first frame update
+     void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+         
+        }
+    }
     void Start()
     {
         
@@ -28,6 +38,8 @@ public class BossStats : MonoBehaviour
 
         if (bossHealth <= 0)
         {
+            
+
             SceneManager.LoadSceneAsync(level);
             Destroy(gameObject);
         }

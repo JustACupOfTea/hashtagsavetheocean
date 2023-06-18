@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossHitbox : MonoBehaviour
 {
     [SerializeField] public int playerDamageToBoss;
+
     // Start is called before the first frame update
     void Start()
     {
