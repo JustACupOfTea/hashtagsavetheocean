@@ -7,43 +7,46 @@ public class BossHitRange : MonoBehaviour
     [SerializeField] public float damageInterval;
     [SerializeField] public int damageToPlayer;
     public bool hittingPlayer;
-    public float timePassedSinceLastSpawnTry = 0;
+    public float timePassedSinceLastHit = 0;
     Animator animator;
-    
+    private bool hasHit; 
     // Start is called before the first frame update
     void Start()
     {
         hittingPlayer = false;
         animator = transform.parent.GetComponentInChildren<Animator>();
+        hasHit = false;
     }
 
     // Update is called once per frame
 
     void Update()
     {
-        if (hittingPlayer && timePassedSinceLastSpawnTry>damageInterval)
+        if (hittingPlayer && timePassedSinceLastHit>damageInterval)
         {
             animator.SetBool("IsAttacking", true);
-            animator.SetBool("isIdle", false);
-            timePassedSinceLastSpawnTry = 0;
+            animator.SetBool("IsIdle", false);
+            timePassedSinceLastHit = 0;
+            hasHit = false;
         }
         else
         {
-            
-            if (animator.GetBool("IsAttacking") && timePassedSinceLastSpawnTry>2)
+            if (animator.GetBool("IsAttacking") && timePassedSinceLastHit>2)
             {
                 animator.SetBool("IsAttacking", false);
-                animator.SetBool("isIdle", true);
-
+                animator.SetBool("IsIdle", true);
+            }else if (animator.GetBool("IsIdle") && timePassedSinceLastHit>2.5 && !hasHit)
+            {
+                hasHit = true;
                 PlayerStats.instance.ReduceHealth(damageToPlayer);
             }
         }
-        timePassedSinceLastSpawnTry += Time.deltaTime;
+        timePassedSinceLastHit += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             hittingPlayer = true;
         }
@@ -53,7 +56,7 @@ public class BossHitRange : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             hittingPlayer = false;
         }

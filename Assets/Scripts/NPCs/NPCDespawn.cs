@@ -6,7 +6,7 @@ public class NPCDespawn : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "NPC" && other.gameObject.GetComponent<AI_NPC>().reachedTarget)
+        if (other.gameObject.CompareTag("NPC") && other.gameObject.GetComponent<AI_NPC>().reachedTarget)
         {
             Destroy(other.gameObject);
         }

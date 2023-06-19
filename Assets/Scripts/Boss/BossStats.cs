@@ -1,23 +1,22 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BossStats : MonoBehaviour
 {
     public static BossStats instance;
     [SerializeField] public int bossHealth;
-
-        [SerializeField] private string level;
-        
-    
+    [SerializeField] public string level;
+    public HealthBarBoss hpBarBoss;
+    public Text bossName;
+    public Timer timer;
     // Start is called before the first frame update
      void Awake()
     {
         if (instance == null)
         {
             instance = this;
-         
         }
     }
     void Start()
@@ -31,16 +30,22 @@ public class BossStats : MonoBehaviour
         
     }
     
-    public IEnumerator ReduceHealth(int reduceBy)
+    public void ReduceHealth(int reduceBy)
     {
         bossHealth -= reduceBy;
-        //Update hpbar
-
-        if (bossHealth <= 0)
-        {
-            yield return new WaitForSeconds(5);
-            SceneManager.LoadSceneAsync(level);
-        }
-            
+        hpBarBoss.SetHealth(bossHealth);
+    }
+    
+    public IEnumerator ReduceHealthDeath(int reduceBy)
+    {
+        bossHealth -= reduceBy;
+        hpBarBoss.SetHealth(bossHealth);
+        timer.Finish();
+        PlayerStats.instance.finished = true;
+        yield return new WaitForSeconds(5);
+        hpBarBoss.gameObject.SetActive(false);
+        bossName.gameObject.SetActive(false);
+        SceneManager.LoadSceneAsync(level);
+        GameObject.Find("XR Origin").transform.position= Vector3.zero;
     }
 }

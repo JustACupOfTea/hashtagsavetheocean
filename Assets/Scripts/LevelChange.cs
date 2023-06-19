@@ -21,5 +21,14 @@ public class LevelChange : MonoBehaviour
     public void ChangeLevel()
     {
         SceneManager.LoadSceneAsync(level);
+        GameObject.Find("XR Origin").transform.position= Vector3.zero;
+        if (level == "StartScreen")
+        {
+            PlayerStats.instance.ResetPlayerStats();
+        }else if (level == "SampleScene")
+        {
+            PlayerStats.instance.startTime = Time.time;
+            PlayerStats.instance.started = true;
+        }
     }
 }
