@@ -4,25 +4,17 @@ using UnityEngine;
 
 public class BossHitRange : MonoBehaviour
 {
-     public static BossHitRange instance;
     [SerializeField] public float damageInterval;
     [SerializeField] public int damageToPlayer;
     public bool hittingPlayer;
-    private float timePassedSinceLastSpawnTry = 0;
-  
-  void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-         
-        }
-    }
+    public float timePassedSinceLastSpawnTry = 0;
+    Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
         hittingPlayer = false;
-        
+        animator = transform.parent.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -31,8 +23,17 @@ public class BossHitRange : MonoBehaviour
     {
         if (hittingPlayer && timePassedSinceLastSpawnTry>damageInterval)
         {
-            PlayerStats.instance.ReduceHealth(damageToPlayer);
+            animator.SetBool("IsAttacking", true);
             timePassedSinceLastSpawnTry = 0;
+        }
+        else
+        {
+            
+            if (animator.GetBool("IsAttacking") && timePassedSinceLastSpawnTry>2)
+            {
+                animator.SetBool("IsAttacking", false);
+                PlayerStats.instance.ReduceHealth(damageToPlayer);
+            }
         }
         timePassedSinceLastSpawnTry += Time.deltaTime;
     }
@@ -42,7 +43,6 @@ public class BossHitRange : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             hittingPlayer = true;
-          
         }
         
         
