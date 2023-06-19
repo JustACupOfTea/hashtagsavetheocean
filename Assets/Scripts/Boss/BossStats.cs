@@ -31,17 +31,15 @@ public class BossStats : MonoBehaviour
         
     }
     
-    public void ReduceHealth(int reduceBy)
+    public IEnumerator ReduceHealth(int reduceBy)
     {
         bossHealth -= reduceBy;
         //Update hpbar
 
         if (bossHealth <= 0)
         {
-            
-
+            yield return new WaitForSeconds(5);
             SceneManager.LoadSceneAsync(level);
-            Destroy(gameObject);
         }
             
     }

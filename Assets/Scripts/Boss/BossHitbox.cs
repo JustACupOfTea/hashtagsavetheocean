@@ -22,7 +22,6 @@ public class BossHitbox : MonoBehaviour
         if (other.gameObject.tag == "Sword")
         {
             transform.GetComponentInParent<BossStats>().ReduceHealth(playerDamageToBoss);
-            Debug.Log("Boss DMG: 10");
         }
     }
 }

@@ -5,27 +5,28 @@ using UnityEngine;
 public class animatorController : MonoBehaviour
 {
     Animator animator;
+
+    private BossHitRange bHR;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        bHR = transform.parent.GetComponentInChildren<BossHitRange>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool isWalking = animator.GetBool("isWalking");
-        bool isAttacking = animator.GetBool("isAttacking");
-        bool isDead = animator.GetBool("isDead");
-
-        if(!isAttacking &&  BossHitRange.instance.hittingPlayer)
-        {
-            animator.SetBool("isAttacking", true);
-        }
+        bool isWalking = animator.GetBool("IsWalking");
+        bool isAttacking = animator.GetBool("IsAttacking");
+        bool isDead = animator.GetBool("IsDead");
+        
+        
+        // Insert idle if not walking and not attacking
         
         if(!isDead &&  BossStats.instance.bossHealth == 0)
         {
-            animator.SetBool("isDead", true);
+            animator.SetBool("IsDead", true);
         } 
 
     

@@ -41,7 +41,7 @@ public class PlayerStats : MonoBehaviour
         {
             instance = this;
             score = 0;
-            playerHealth = 1;
+            playerHealth = 90;
             bossFightTriggered = false;
             hpBar.SetMaxHealth();
         }
