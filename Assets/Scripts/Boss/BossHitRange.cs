@@ -24,6 +24,7 @@ public class BossHitRange : MonoBehaviour
         if (hittingPlayer && timePassedSinceLastSpawnTry>damageInterval)
         {
             animator.SetBool("IsAttacking", true);
+            animator.SetBool("isIdle", false);
             timePassedSinceLastSpawnTry = 0;
         }
         else
@@ -32,6 +33,8 @@ public class BossHitRange : MonoBehaviour
             if (animator.GetBool("IsAttacking") && timePassedSinceLastSpawnTry>2)
             {
                 animator.SetBool("IsAttacking", false);
+                animator.SetBool("isIdle", true);
+
                 PlayerStats.instance.ReduceHealth(damageToPlayer);
             }
         }

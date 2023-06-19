@@ -20,6 +20,7 @@ public class animatorController : MonoBehaviour
         bool isWalking = animator.GetBool("IsWalking");
         bool isAttacking = animator.GetBool("IsAttacking");
         bool isDead = animator.GetBool("IsDead");
+        bool isIdle = animator.GetBool("isIdle");
         
         
         // Insert idle if not walking and not attacking
