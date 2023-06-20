@@ -57,7 +57,7 @@ public class PlayerStats : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            score = 200;
+            score = 0;
             playerHealth = 90;
             timer = 0;
             finished = false;
@@ -67,14 +67,12 @@ public class PlayerStats : MonoBehaviour
             hpBar.SetHealth(playerHealth);
             hpBarBoss.gameObject.SetActive(false);
             bossName.gameObject.SetActive(false);
-            Debug.Log("Awake Stats");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(started);
         if(finished || !started)
             return;
 
@@ -130,10 +128,10 @@ public class PlayerStats : MonoBehaviour
             //Spawn swords
             Vector3 weaponSpawn;
             Vector3 playerPos = transform.parent.transform.position;
-            AkSoundEngine.PostEvent("Play_Heaven", gameObject);
-            AkSoundEngine.PostEvent("Play_HolySwords", gameObject);
             if (score >= 200)
             {
+                AkSoundEngine.PostEvent("Play_Heaven", gameObject);
+                AkSoundEngine.PostEvent("Play_HolySwords", gameObject);
                 weaponSpawn = new Vector3(playerPos.x+2, playerPos.y+10,playerPos.z);
                 Instantiate(weapon, weaponSpawn, Quaternion.identity);
                 if (score >= 400)

@@ -24,9 +24,13 @@ public class LevelChange : MonoBehaviour
         GameObject.Find("XR Origin").transform.position= Vector3.zero;
         if (level == "StartScreen")
         {
+            AkSoundEngine.StopAll();
+            AkSoundEngine.PostEvent("Play_Lobby_theme", gameObject);
+            AkSoundEngine.SetState("music", "lobby");
             PlayerStats.instance.ResetPlayerStats();
         }else if (level == "SampleScene")
         {
+            AkSoundEngine.StopAll();
             PlayerStats.instance.startTime = Time.time;
             PlayerStats.instance.started = true;
             
