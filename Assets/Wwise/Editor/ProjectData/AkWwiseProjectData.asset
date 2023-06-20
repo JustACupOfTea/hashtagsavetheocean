@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: a629a4baf1552b4195338917768bcbf7
       Path: Events\Default Work Unit\Play_BangingWall
       maxAttenuation: 0
-      maxDuration: 1.351458
-      minDuration: 1.351458
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Boss_Attack
       guid: fd31bf5bff03bf4197a197a0d4264f6b
       id: 4155093788
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: fd31bf5bff03bf4197a197a0d4264f6b
       Path: Events\Default Work Unit\Play_Boss_Attack
       maxAttenuation: 0
-      maxDuration: 4.249447
-      minDuration: 3.785388
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Boss_Damage
       guid: f295cbd558b92342ac55de5d8b3b8bf6
       id: 1972916787
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: f295cbd558b92342ac55de5d8b3b8bf6
       Path: Events\Default Work Unit\Play_Boss_Damage
       maxAttenuation: 0
-      maxDuration: 0.786391
-      minDuration: 0.735656
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Boss_Grunt
       guid: 77ce37f096ef78478fa28dc4533f3f43
       id: 521258102
@@ -178,7 +178,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 77ce37f096ef78478fa28dc4533f3f43
       Path: Events\Default Work Unit\Play_Boss_Grunt
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_Bubbles
@@ -195,7 +195,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1e096028ad2e8741b72329960b679a91
       Path: Events\Default Work Unit\Play_Bubbles
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_Drop_Waste
@@ -213,8 +213,8 @@ MonoBehaviour:
         guid: e4040095a4ee654d81188a4b75359306
       Path: Events\Default Work Unit\Play_Drop_Waste
       maxAttenuation: 0
-      maxDuration: 0.071088
-      minDuration: 0.071088
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Dungeon
       guid: ffb40c15f85d4b47bd91bfffaf0a3dbf
       id: 1754227292
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: c132d8d46be9b747bb072b889bbca8ce
       Path: Events\Default Work Unit\Play_Gameplay
       maxAttenuation: 0
-      maxDuration: 22.158436
-      minDuration: 22.158436
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Goblin
       guid: b587fefbb706a545958178aee8bcb2a2
       id: 301206759
@@ -280,7 +280,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b587fefbb706a545958178aee8bcb2a2
       Path: Events\Default Work Unit\Play_Goblin
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_Grab
@@ -298,8 +298,8 @@ MonoBehaviour:
         guid: a3171d6c7b7a994e86d9b770c65207db
       Path: Events\Default Work Unit\Play_Grab
       maxAttenuation: 0
-      maxDuration: 0.280946
-      minDuration: 0.222987
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Heaven
       guid: 237d147c016b204a8c3e82d4b63af0d5
       id: 3132622343
@@ -315,8 +315,8 @@ MonoBehaviour:
         guid: 237d147c016b204a8c3e82d4b63af0d5
       Path: Events\Default Work Unit\Play_Heaven
       maxAttenuation: 0
-      maxDuration: 5.897869
-      minDuration: 5.897869
+      maxDuration: -1
+      minDuration: -1
     - name: Play_HolySwords
       guid: 8888566dfb12e14cbf9d225245b070d7
       id: 2010187882
@@ -332,8 +332,8 @@ MonoBehaviour:
         guid: 8888566dfb12e14cbf9d225245b070d7
       Path: Events\Default Work Unit\Play_HolySwords
       maxAttenuation: 0
-      maxDuration: 12.519095
-      minDuration: 12.519095
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Hurt
       guid: 968e23479243c340b150fa8f2812ef6b
       id: 2955259529
@@ -349,8 +349,8 @@ MonoBehaviour:
         guid: 968e23479243c340b150fa8f2812ef6b
       Path: Events\Default Work Unit\Play_Hurt
       maxAttenuation: 0
-      maxDuration: 0.719819
-      minDuration: 0.510816
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Lobby_theme
       guid: 917f4f486283e84cb105b0b773b7a558
       id: 496920516
@@ -382,7 +382,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 709c8b400efef949b87bf988937416fa
       Path: Events\Default Work Unit\Play_Ogre
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_OgreTHX
@@ -400,8 +400,8 @@ MonoBehaviour:
         guid: 5fd8ce9775d3e64f9563de01cabcc0db
       Path: Events\Default Work Unit\Play_OgreTHX
       maxAttenuation: 0
-      maxDuration: 20.175434
-      minDuration: 20.175434
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Pick_Sword
       guid: 7204000387d29145bbddb6f7a049111c
       id: 1599852459
@@ -417,8 +417,8 @@ MonoBehaviour:
         guid: 7204000387d29145bbddb6f7a049111c
       Path: Events\Default Work Unit\Play_Pick_Sword
       maxAttenuation: 0
-      maxDuration: 1.305149
-      minDuration: 1.305149
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PlayerHelp
       guid: ea7d278d6867bc48805e1e0380848d4b
       id: 3617167940
@@ -434,8 +434,8 @@ MonoBehaviour:
         guid: ea7d278d6867bc48805e1e0380848d4b
       Path: Events\Default Work Unit\Play_PlayerHelp
       maxAttenuation: 0
-      maxDuration: 14.918533
-      minDuration: 14.918533
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Score
       guid: 4257557d84ed6b49bae948c74cf77756
       id: 3240049516
@@ -451,8 +451,8 @@ MonoBehaviour:
         guid: 4257557d84ed6b49bae948c74cf77756
       Path: Events\Default Work Unit\Play_Score
       maxAttenuation: 0
-      maxDuration: 1.157333
-      minDuration: 0.874229
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Sea_ambience
       guid: 808dfc4fdeea2349b73ffb093fe5f037
       id: 2350077198
@@ -485,8 +485,8 @@ MonoBehaviour:
         guid: 7eeecaf21a605c4a97a3b503b040f8c7
       Path: Events\Default Work Unit\Play_Slash
       maxAttenuation: 0
-      maxDuration: 0.640592
-      minDuration: 0.508439
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Steps
       guid: 395d4f734f4e0b4587850cb390778bfb
       id: 2600469463
@@ -502,8 +502,8 @@ MonoBehaviour:
         guid: 395d4f734f4e0b4587850cb390778bfb
       Path: Events\Default Work Unit\Play_Steps
       maxAttenuation: 0
-      maxDuration: 1.198103
-      minDuration: 0.867792
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Story
       guid: b398c6e162bb7c4e8ebcf2730daa612e
       id: 2501377889
@@ -519,8 +519,8 @@ MonoBehaviour:
         guid: b398c6e162bb7c4e8ebcf2730daa612e
       Path: Events\Default Work Unit\Play_Story
       maxAttenuation: 0
-      maxDuration: 48.330154
-      minDuration: 48.330154
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Success
       guid: 5a5f66015f6b5b44898edf2c531e32db
       id: 3943614907
@@ -709,7 +709,7 @@ MonoBehaviour:
     m_lastTime: -8585143461502087314
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
