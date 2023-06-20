@@ -29,6 +29,9 @@ public class LevelChange : MonoBehaviour
         {
             PlayerStats.instance.startTime = Time.time;
             PlayerStats.instance.started = true;
+            
+            AkSoundEngine.PostEvent("Play_Background_music", gameObject);
+            AkSoundEngine.SetState("music", "scene");
         }
     }
 }

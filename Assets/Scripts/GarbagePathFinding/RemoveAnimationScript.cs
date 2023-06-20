@@ -8,5 +8,6 @@ public class RemoveAnimationScript : MonoBehaviour
     {
         Animation a = transform.GetComponent<Animation>();
         Destroy(a);
+        AkSoundEngine.PostEvent("Play_Grab", gameObject);
     }
 }

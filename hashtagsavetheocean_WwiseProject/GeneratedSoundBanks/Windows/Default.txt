@@ -1,0 +1,90 @@
+Event	ID	Name			Wwise Object Path	Notes
+	17721092	Play_Grab			\Default Work Unit\Play_Grab	
+	65769146	Play_Background_music			\Default Work Unit\Play_Background_music	
+	301206759	Play_Goblin			\Default Work Unit\Play_Goblin	
+	496920516	Play_Lobby_theme			\Default Work Unit\Play_Lobby_theme	
+	521258102	Play_Boss_Grunt			\Default Work Unit\Play_Boss_Grunt	
+	1599852459	Play_Pick_Sword			\Default Work Unit\Play_Pick_Sword	
+	1754227292	Play_Dungeon			\Default Work Unit\Play_Dungeon	
+	1972916787	Play_Boss_Damage			\Default Work Unit\Play_Boss_Damage	
+	2099440663	Play_Ogre			\Default Work Unit\Play_Ogre	
+	2325273874	Play_Drop_Waste			\Default Work Unit\Play_Drop_Waste	
+	2350077198	Play_Sea_ambience			\Default Work Unit\Play_Sea_ambience	
+	2600469463	Play_Steps			\Default Work Unit\Play_Steps	
+	3234518144	Play_BangingWall			\Default Work Unit\Play_BangingWall	
+	3240049516	Play_Score			\Default Work Unit\Play_Score	
+	3381697299	Play_Bubbles			\Default Work Unit\Play_Bubbles	
+	4021614365	Play_Final_Fight			\Default Work Unit\Play_Final_Fight	
+	4155093788	Play_Boss_Attack			\Default Work Unit\Play_Boss_Attack	
+	4237055289	Play_Slash			\Default Work Unit\Play_Slash	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	music			\Default Work Unit\music	
+
+State	ID	Name	State Group			Notes
+	290285391	lobby	music			
+	580146960	bossfight	music			
+	748895195	None	music			
+	979765101	win	music			
+	1593864692	defeat	music			
+	1926883983	scene	music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	9834715	bossfight	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Background_music		
+	21281904	defeat	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Final_Fight		
+	44355265	bossfight	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dungeon		
+	85646319	lobby	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Final_Fight		
+	122018800	win	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Lobby_theme		
+	384603144	win	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Final_Fight		
+	385878793	scene	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Final_Fight		
+	399373614	lobby	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Background_music		
+	434432269	scene	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Lobby_theme		
+	452613927	lobby	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dungeon		
+	520211829	bossfight	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Lobby_theme		
+	586663600	scene	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dungeon		
+	609959140	defeat	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Background_music		
+	622514817	win	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dungeon		
+	816741171	win	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Background_music		
+	818438180	defeat	music	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Lobby_theme		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	11875454	Grunt_01	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_D5788564.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Boss_Grunt\Grunt_01		420696
+	16917722	Pick_Sword	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Sword Sound Effect  Sword Slash Sound Effect  Knife Slash Sound Effect  Blade Sound Effect_D90E72BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pick_Sword		230292
+	21952871	Damage	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_05B6C104.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Boss_Damage\Damage		134312
+	30043051	Drop	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Item or Material Pickup Pop 1 of 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Drop_Waste\Drop		6334
+	43379791	WasteInWater	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Bubbles In Water_CBD14A0F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Waste\Bubbles\WasteInWater		382788
+	88503463	Goblin_yell_4	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Goblin_yell_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Goblin\Goblin_yell_4		106630
+	128026018	Dungeon	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Cave  2  Ambience  Sound Effect_59911E49.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dungeon		5728592
+	161445690	Grunt_02	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_9FBF14DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Boss_Grunt\Grunt_02		478868
+	291723944	WasteInWater_01	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Bubbles In Water_FE10953E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Waste\Bubbles\WasteInWater_01		392860
+	340636076	Ogre	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Ogre_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Ogre\Ogre		190340
+	355790176	WasteInWater_02	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Bubbles In Water_5C5A7707.wem		\Actor-Mixer Hierarchy\Default Work Unit\Waste\Bubbles\WasteInWater_02		413000
+	359521657	Score_3	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Score_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Score\Score_3		209732
+	391412645	Goblin_yell_3	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Goblin_yell_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Goblin\Goblin_yell_3		81688
+	427167346	Sea_ambience	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\the sea_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Nature\Sea_ambience		43078144
+	457763776	Slash	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Slash2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slash		100736
+	486276466	Ogre_4	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Ogre_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Ogre\Ogre_4		129188
+	511640002	Score_2	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Score_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Score\Score_2		213620
+	514663667	WasteInWater_03	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Bubbles In Water_6C449ED2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Waste\Bubbles\WasteInWater_03		433148
+	518383400	Grab	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Grab_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Grab		22140
+	525361882	Water_step	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Water_step_028C463D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Water_step		153144
+	618657801	Goblin_Yell	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Goblin_Yell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Goblin\Goblin_Yell		153836
+	687300337	Drop3	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Item or Material Pickup Pop 3 of 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Drop_Waste\Drop3		6334
+	688841179	Damage2	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_A57F80C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Boss_Damage\Damage2		138780
+	691718541	Damage3	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_6D2BD2E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Boss_Damage\Damage3		129832
+	728036008	Water_step2	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Water_step2_FC2CCE34.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Water_step2		211408
+	747121809	Goblin_yell_2	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Goblin_yell_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Goblin\Goblin_yell_2		73376
+	752499517	Boss_Attack	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_586F60CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\BossAttack\Boss_Attack		353572
+	881885639	Ogre_2	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Ogre_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Ogre\Ogre_2		322704
+	886377582	Drop2	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Item or Material Pickup Pop 2 of 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Drop_Waste\Drop2		6334
+	933727220	Grunt	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_DC90454C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Boss_Grunt\Grunt		393848
+	989806111	BangingWall	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\BangingWall_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\House\BangingWall		129804
+	1033820243	Ogre_3	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Ogre_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Ogre\Ogre_3		380616
+	1050187604	Score	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Score_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Score\Score		167916
+	1059480663	Score_4	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Score_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Score\Score_4		222272
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	60262689	Background_music	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Animal Crossing_ New Horizons - Island Tour Night  Day Mix (Toadie-Wan Mix)_D41AFD76.wem	60262689.wem	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Background_music	
+	257500912	Lobby_theme	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\Nintendo Wii - Mii Channel Theme_E8CE2F3B.wem	257500912.wem	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Lobby_theme	
+	764593559	Final_Fight	C:\Users\Wolfi\OneDrive\Desktop\CREATIVE COMPUTING\CCL4\CCL4_Projekt\hashtagsavetheocean\hashtagsavetheocean_WwiseProject\.cache\Windows\SFX\boss battle_D79FB2B7.wem	764593559.wem	\Actor-Mixer Hierarchy\Default Work Unit\Environment\Final_Fight	
+

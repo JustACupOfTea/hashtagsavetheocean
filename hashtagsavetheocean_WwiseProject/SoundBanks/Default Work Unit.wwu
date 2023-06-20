@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{96F01773-4875-42DE-ABDD-D18BAEFEFA93}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{96F01773-4875-42DE-ABDD-D18BAEFEFA93}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{96F01773-4875-42DE-ABDD-D18BAEFEFA93}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Default" ID="{D51E0733-51E5-4314-85C8-F6410E367EFE}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_BangingWall" ID="{BAA429A6-55F1-412B-9533-8917768BCBF7}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Bubbles" ID="{2860091E-2EAD-4187-B723-29960B679A91}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Boss_Attack" ID="{5BBF31FD-03FF-41BF-97A1-97A0D4264F6B}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Boss_Damage" ID="{D5CB95F2-B958-4223-AC55-DE5D8B3B8BF6}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Background_music" ID="{2242E569-391C-435F-94BE-F870BB1EAA3F}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Steps" ID="{734F5D39-4E4F-450B-8785-0CB390778BFB}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Pick_Sword" ID="{03000472-D287-4591-BBDD-B6F7A049111C}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Goblin" ID="{FBFE87B5-06B7-45A5-9581-78AEE8BCB2A2}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Dungeon" ID="{150CB4FF-5DF8-474B-BD91-BFFFAF0A3DBF}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Boss_Grunt" ID="{F037CE77-EF96-4778-8FA2-8DC4533F3F43}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Sea_ambience" ID="{4FFC8D80-EADE-4923-B73F-FB093FE5F037}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Score" ID="{7D555742-ED84-496B-BAE9-48C74CF77756}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ogre" ID="{408B9C70-FE0E-49F9-B87B-F988937416FA}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Slash" ID="{F2CAEE7E-601A-4A5C-97A3-B503B040F8C7}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Final_Fight" ID="{65BF5E7A-CBA5-4B64-9CA1-7346D86A1FE0}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Lobby_theme" ID="{484F7F91-8362-4CE8-B105-B0B773B7A558}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Drop_Waste" ID="{950004E4-EEA4-4D65-8118-8A4B75359306}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Grab" ID="{6C1D17A3-7A7B-4E99-86D9-B770C65207DB}" WorkUnitID="{EF14148D-E143-42AC-8049-C689624036D2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
