@@ -22,6 +22,8 @@ public class AI_Boss : MonoBehaviour
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.SetDestination(prey.transform.position);
+        AkSoundEngine.PostEvent("Play_Final_Fight", gameObject);
+        AkSoundEngine.SetState("music", "bossfight");
     }
 
     // Update is called once per frame

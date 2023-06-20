@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5910C6B7-AC09-40A6-8ECD-185E273F2378}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{5910C6B7-AC09-40A6-8ECD-185E273F2378}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5910C6B7-AC09-40A6-8ECD-185E273F2378}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="music" ID="{E99ED8F1-1A47-40F9-B9E9-5C720FCA1F1D}">
+					<ChildrenList>
+						<State Name="None" ID="{F8E65FCD-06FC-43CC-B032-24F434508CFA}"/>
+						<State Name="bossfight" ID="{28F82439-8092-49F1-97BE-46D26CCE8F91}"/>
+						<State Name="lobby" ID="{896A2423-F2DC-4738-8F02-34B2E718071A}"/>
+						<State Name="scene" ID="{882FC5AA-C0A4-4CFC-B73E-46A9EF53E8BF}"/>
+						<State Name="defeat" ID="{FB3765A8-DC7E-4D49-853A-B62FCBBDA71B}"/>
+						<State Name="win" ID="{8F5E1267-4017-466D-B749-A1ED17F397CA}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="lobby" ID="{896A2423-F2DC-4738-8F02-34B2E718071A}"/>
+							<EndState Name="scene" ID="{882FC5AA-C0A4-4CFC-B73E-46A9EF53E8BF}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

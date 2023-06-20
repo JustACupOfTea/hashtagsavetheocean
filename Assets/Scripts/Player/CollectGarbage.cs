@@ -11,7 +11,7 @@ public class CollectGarbage : MonoBehaviour
         {
             Destroy(other.gameObject);
             PlayerStats.instance.IncreaseScore(50);
-
+            AkSoundEngine.PostEvent("Play_Score", gameObject);
         }
     }
 }

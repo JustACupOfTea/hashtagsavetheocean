@@ -14,7 +14,7 @@ public class CharacterMovementHelp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("Play_Ocean_Waves", gameObject);
+        
     }
 
     // Update is called once per frame
