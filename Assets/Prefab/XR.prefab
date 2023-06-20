@@ -284,7 +284,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 6576574995771608476}
-  m_PlaneDistance: 2
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -346,6 +346,7 @@ GameObject:
   - component: {fileID: 3602217232209636099}
   - component: {fileID: 6310731839311899413}
   - component: {fileID: 5648774461138402765}
+  - component: {fileID: 7281246567396050430}
   m_Layer: 5
   m_Name: Timer Text
   m_TagString: Untagged
@@ -370,7 +371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 207}
+  m_AnchoredPosition: {x: 0, y: 146}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3602217232209636099
@@ -428,6 +429,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 6310731839311899413}
+--- !u!114 &7281246567396050430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4701810130867286192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5007363348066157078
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +498,7 @@ MonoBehaviour:
   hpBarBoss: {fileID: 1761209196007126859}
   bossName: {fileID: 3060664306744586858}
   boss: {fileID: 1154229632722755322, guid: 757b146932bccf74db001c27df74d6a9, type: 3}
-  bossSpawnPoint: {x: -20.12, y: -26.37, z: -105.82}
+  bossSpawnPoint: {x: 17.6, y: -16.53, z: -58.8}
   weapon: {fileID: 5627051813632737782, guid: c907e5c780213e64eb69f330dc65f4b1, type: 3}
 --- !u!1 &5969782123187081787
 GameObject:
@@ -496,6 +512,7 @@ GameObject:
   - component: {fileID: 8382239175996800101}
   - component: {fileID: 5417036304885173093}
   - component: {fileID: 8771279498626750141}
+  - component: {fileID: 76716574236322402}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -520,7 +537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: 207.00006}
+  m_AnchoredPosition: {x: -333, y: 146.00005}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8382239175996800101
@@ -578,6 +595,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Score
+--- !u!114 &76716574236322402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5969782123187081787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &6378416875691939309
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -325}
+  m_AnchoredPosition: {x: 0, y: -250.00002}
   m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8476722176208503556
@@ -1941,6 +1973,7 @@ GameObject:
   - component: {fileID: 8655072563535158134}
   - component: {fileID: 4462341719304679436}
   - component: {fileID: 3060664306744586858}
+  - component: {fileID: 6867034464422753812}
   m_Layer: 5
   m_Name: BossName
   m_TagString: Untagged
@@ -1965,7 +1998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86.5, y: -294.99997}
+  m_AnchoredPosition: {x: -86.5, y: -220}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4462341719304679436
@@ -2010,6 +2043,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Sifrid \u2013 The tainted One"
+--- !u!114 &6867034464422753812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6707766201032053046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8588850900841504643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,7 +2094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333, y: 207.00006}
+  m_AnchoredPosition: {x: 333, y: 146.00005}
   m_SizeDelta: {x: 291.98267, y: 43.793518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7428381038607920596

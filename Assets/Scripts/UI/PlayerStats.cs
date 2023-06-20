@@ -57,8 +57,8 @@ public class PlayerStats : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            score = 0;
-            playerHealth = 0;
+            score = 200;
+            playerHealth = 90;
             timer = 0;
             finished = false;
             started = false;

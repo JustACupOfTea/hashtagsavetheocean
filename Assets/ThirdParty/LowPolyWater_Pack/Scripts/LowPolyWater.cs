@@ -23,6 +23,8 @@ namespace LowPolyWater
 
         void Start()
         {
+            mesh = Instantiate(meshFilter.mesh);
+            meshFilter.mesh = mesh;
             CreateMeshLowPoly(meshFilter);
         }
 

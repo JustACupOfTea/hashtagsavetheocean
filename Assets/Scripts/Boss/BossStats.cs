@@ -51,7 +51,6 @@ public class BossStats : MonoBehaviour
         AkSoundEngine.StopAll();
         AkSoundEngine.PostEvent("Play_Success", gameObject);
         AkSoundEngine.SetState("music", "win");
-        AkSoundEngine.PostEvent("Play_OgreTHX", gameObject);
         GameObject.Find("XR Origin").transform.position= Vector3.zero;
     }
 }

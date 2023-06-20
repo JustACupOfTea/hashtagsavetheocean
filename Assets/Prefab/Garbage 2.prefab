@@ -409,14 +409,18 @@ MonoBehaviour:
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
-  enableActionOnEvent: 0
+  enableActionOnEvent: 1
   data:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 930c22c219ee24841b86ce27ae5793dd,
       type: 2}
   useCallbacks: 0
-  Callbacks: []
+  Callbacks:
+  - Flags:
+      value: 1
+    FunctionName: 
+    GameObject: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0

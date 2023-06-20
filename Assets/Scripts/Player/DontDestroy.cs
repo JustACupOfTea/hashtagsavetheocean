@@ -14,10 +14,6 @@ public class DontDestroy : MonoBehaviour
             player = this;
             DontDestroyOnLoad(this);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
     // Start is called before the first frame update
