@@ -28,6 +28,8 @@ public class BossHitRange : MonoBehaviour
             animator.SetBool("IsIdle", false);
             timePassedSinceLastHit = 0;
             hasHit = false;
+            
+            AkSoundEngine.PostEvent("Play_Boss_Attack", gameObject);
         }
         else
         {

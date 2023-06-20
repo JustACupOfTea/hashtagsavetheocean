@@ -34,6 +34,8 @@ public class BossStats : MonoBehaviour
     {
         bossHealth -= reduceBy;
         hpBarBoss.SetHealth(bossHealth);
+        AkSoundEngine.PostEvent("Play_Slash", gameObject);
+        AkSoundEngine.PostEvent("Play_Boss_Damage", gameObject);
     }
     
     public IEnumerator ReduceHealthDeath(int reduceBy)
@@ -46,6 +48,10 @@ public class BossStats : MonoBehaviour
         hpBarBoss.gameObject.SetActive(false);
         bossName.gameObject.SetActive(false);
         SceneManager.LoadSceneAsync(level);
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Play_Success", gameObject);
+        AkSoundEngine.SetState("music", "win");
+        AkSoundEngine.PostEvent("Play_OgreTHX", gameObject);
         GameObject.Find("XR Origin").transform.position= Vector3.zero;
     }
 }

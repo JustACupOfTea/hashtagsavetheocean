@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 6209227773381063978}
   - component: {fileID: 8377994388721004270}
   - component: {fileID: 6044475359998554999}
+  - component: {fileID: 2006376755568401722}
   - component: {fileID: 4058646340927339108}
   m_Layer: 7
   m_Name: WatermelonSword
@@ -183,7 +184,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2006376755568401722}
+        m_TargetAssemblyTypeName: GrabSword, Assembly-CSharp
+        m_MethodName: PlaySwordSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -269,6 +282,18 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &2006376755568401722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627051813632737782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b33c6d4d2ae9714eb6c0555d1689f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &4058646340927339108
 BoxCollider:
   m_ObjectHideFlags: 0

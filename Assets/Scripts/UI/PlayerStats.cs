@@ -57,8 +57,8 @@ public class PlayerStats : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            score = 200;
-            playerHealth = 90;
+            score = 0;
+            playerHealth = 0;
             timer = 0;
             finished = false;
             started = false;
@@ -85,6 +85,7 @@ public class PlayerStats : MonoBehaviour
     {
         playerHealth -= reduceBy;
         hpBar.SetHealth(playerHealth);
+        AkSoundEngine.PostEvent("Play_Hurt", gameObject);
         // Check if player died
         if (playerHealth <= 0 && bossFightTriggered)
         {
@@ -95,6 +96,11 @@ public class PlayerStats : MonoBehaviour
             hpBarBoss.gameObject.SetActive(false);
             bossName.gameObject.SetActive(false);
             GameObject.Find("XR Origin").transform.position= Vector3.zero;
+            AkSoundEngine.StopAll();
+            AkSoundEngine.PostEvent("Play_Dungeon", gameObject);
+            AkSoundEngine.SetState("music", "defeat");
+            AkSoundEngine.PostEvent("Play_PlayerHelp", gameObject);
+            
         }
 
     }
@@ -124,6 +130,8 @@ public class PlayerStats : MonoBehaviour
             //Spawn swords
             Vector3 weaponSpawn;
             Vector3 playerPos = transform.parent.transform.position;
+            AkSoundEngine.PostEvent("Play_Heaven", gameObject);
+            AkSoundEngine.PostEvent("Play_HolySwords", gameObject);
             if (score >= 200)
             {
                 weaponSpawn = new Vector3(playerPos.x+2, playerPos.y+10,playerPos.z);

@@ -22,15 +22,23 @@ namespace AK
         static const AkUniqueID PLAY_DROP_WASTE = 2325273874U;
         static const AkUniqueID PLAY_DUNGEON = 1754227292U;
         static const AkUniqueID PLAY_FINAL_FIGHT = 4021614365U;
+        static const AkUniqueID PLAY_GAMEPLAY = 3737014274U;
         static const AkUniqueID PLAY_GOBLIN = 301206759U;
         static const AkUniqueID PLAY_GRAB = 17721092U;
+        static const AkUniqueID PLAY_HEAVEN = 3132622343U;
+        static const AkUniqueID PLAY_HOLYSWORDS = 2010187882U;
+        static const AkUniqueID PLAY_HURT = 2955259529U;
         static const AkUniqueID PLAY_LOBBY_THEME = 496920516U;
         static const AkUniqueID PLAY_OGRE = 2099440663U;
+        static const AkUniqueID PLAY_OGRETHX = 1930876569U;
         static const AkUniqueID PLAY_PICK_SWORD = 1599852459U;
+        static const AkUniqueID PLAY_PLAYERHELP = 3617167940U;
         static const AkUniqueID PLAY_SCORE = 3240049516U;
         static const AkUniqueID PLAY_SEA_AMBIENCE = 2350077198U;
         static const AkUniqueID PLAY_SLASH = 4237055289U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
+        static const AkUniqueID PLAY_STORY = 2501377889U;
+        static const AkUniqueID PLAY_SUCCESS = 3943614907U;
     } // namespace EVENTS
 
     namespace STATES

@@ -24,7 +24,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="78198311">
+		<SoundBank Id="782826392" Language="SFX" Hash="876803702">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
@@ -45,11 +45,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4155093788" Name="Play_Boss_Attack" ObjectPath="\Events\Default Work Unit\Play_Boss_Attack" DurationType="OneShot" DurationMin="1.785388" DurationMax="2.249447">
+				<Event Id="4155093788" Name="Play_Boss_Attack" ObjectPath="\Events\Default Work Unit\Play_Boss_Attack" DurationType="OneShot" DurationMin="3.785388" DurationMax="4.249447">
 					<IncludedMemoryFiles>
 						<File Id="752499517" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_586F60CD.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_B415DDB2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -57,31 +57,31 @@
 					<IncludedMemoryFiles>
 						<File Id="21952871" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_05B6C104.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_81629AFC.wem</Path>
 						</File>
 						<File Id="688841179" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_A57F80C8.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_72B1C221.wem</Path>
 						</File>
 						<File Id="691718541" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_6D2BD2E3.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_8E9A6F1D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="521258102" Name="Play_Boss_Grunt" ObjectPath="\Events\Default Work Unit\Play_Boss_Grunt" DurationType="Infinite">
+				<Event Id="521258102" Name="Play_Boss_Grunt" ObjectPath="\Events\Default Work Unit\Play_Boss_Grunt" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="11875454" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_D5788564.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_36D82E9C.wem</Path>
 						</File>
 						<File Id="161445690" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_9FBF14DA.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_1B4B18A7.wem</Path>
 						</File>
 						<File Id="933727220" Language="SFX">
 							<ShortName>All Ogre Sounds (Terraria) - Sound Effects for editing.wav</ShortName>
-							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_DC90454C.wem</Path>
+							<Path>SFX\All Ogre Sounds (Terraria) - Sound Effects for editing_6F52AC75.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -125,7 +125,7 @@
 					<IncludedMemoryFiles>
 						<File Id="128026018" Language="SFX">
 							<ShortName>Cave  2  Ambience  Sound Effect.wav</ShortName>
-							<Path>SFX\Cave  2  Ambience  Sound Effect_59911E49.wem</Path>
+							<Path>SFX\Cave  2  Ambience  Sound Effect_FA12271B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -136,6 +136,14 @@
 							<Path>SFX\boss battle_D79FB2B7.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="3737014274" Name="Play_Gameplay" ObjectPath="\Events\Default Work Unit\Play_Gameplay" DurationType="OneShot" DurationMin="22.158436" DurationMax="22.158436">
+					<IncludedMemoryFiles>
+						<File Id="465281364" Language="SFX">
+							<ShortName>lukas_intro.wav</ShortName>
+							<Path>SFX\lukas_intro_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="301206759" Name="Play_Goblin" ObjectPath="\Events\Default Work Unit\Play_Goblin" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -162,6 +170,42 @@
 						<File Id="518383400" Language="SFX">
 							<ShortName>Grab.wav</ShortName>
 							<Path>SFX\Grab_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3132622343" Name="Play_Heaven" ObjectPath="\Events\Default Work Unit\Play_Heaven" DurationType="OneShot" DurationMin="5.897869" DurationMax="5.897869">
+					<IncludedMemoryFiles>
+						<File Id="499902878" Language="SFX">
+							<ShortName>Heavens Choir - Sound Effect (HD).wav</ShortName>
+							<Path>SFX\Heavens Choir - Sound Effect (HD)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2010187882" Name="Play_HolySwords" ObjectPath="\Events\Default Work Unit\Play_HolySwords" DurationType="OneShot" DurationMin="12.519095" DurationMax="12.519095">
+					<IncludedMemoryFiles>
+						<File Id="620583632" Language="SFX">
+							<ShortName>vicky_swords.wav</ShortName>
+							<Path>SFX\vicky_swords_07D0B147.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2955259529" Name="Play_Hurt" ObjectPath="\Events\Default Work Unit\Play_Hurt" DurationType="OneShot" DurationMin="0.510816" DurationMax="0.719819">
+					<IncludedMemoryFiles>
+						<File Id="281305747" Language="SFX">
+							<ShortName>Male_Hurt_04.wav</ShortName>
+							<Path>SFX\Male_Hurt_04_10C4C929.wem</Path>
+						</File>
+						<File Id="416282524" Language="SFX">
+							<ShortName>Male_Hurt_03.wav</ShortName>
+							<Path>SFX\Male_Hurt_03_10C4C929.wem</Path>
+						</File>
+						<File Id="639943807" Language="SFX">
+							<ShortName>Male_Hurt_01.wav</ShortName>
+							<Path>SFX\Male_Hurt_01_10C4C929.wem</Path>
+						</File>
+						<File Id="705663061" Language="SFX">
+							<ShortName>Male_Hurt_02.wav</ShortName>
+							<Path>SFX\Male_Hurt_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -193,11 +237,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1930876569" Name="Play_OgreTHX" ObjectPath="\Events\Default Work Unit\Play_OgreTHX" DurationType="OneShot" DurationMin="20.175434" DurationMax="20.175434">
+					<IncludedMemoryFiles>
+						<File Id="396657947" Language="SFX">
+							<ShortName>ogre_serkan_win.wav</ShortName>
+							<Path>SFX\ogre_serkan_win_278FB418.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1599852459" Name="Play_Pick_Sword" ObjectPath="\Events\Default Work Unit\Play_Pick_Sword" DurationType="OneShot" DurationMin="1.305149" DurationMax="1.305149">
 					<IncludedMemoryFiles>
 						<File Id="16917722" Language="SFX">
 							<ShortName>Sword Sound Effect  Sword Slash Sound Effect  Knife Slash Sound Effect  Blade Sound Effect.wav</ShortName>
-							<Path>SFX\Sword Sound Effect  Sword Slash Sound Effect  Knife Slash Sound Effect  Blade Sound Effect_D90E72BE.wem</Path>
+							<Path>SFX\Sword Sound Effect  Sword Slash Sound Effect  Knife Slash Sound Effect  Blade Sound Effect_C818F5B9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3617167940" Name="Play_PlayerHelp" ObjectPath="\Events\Default Work Unit\Play_PlayerHelp" DurationType="OneShot" DurationMin="14.918533" DurationMax="14.918533">
+					<IncludedMemoryFiles>
+						<File Id="571912292" Language="SFX">
+							<ShortName>wolfi_HELP.wav</ShortName>
+							<Path>SFX\wolfi_HELP_E2E8A091.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -221,11 +281,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2350077198" Name="Play_Sea_ambience" ObjectPath="\Events\Default Work Unit\Play_Sea_ambience" MaxAttenuation="100." DurationType="OneShot" DurationMin="224.365005" DurationMax="224.365005">
+				<Event Id="2350077198" Name="Play_Sea_ambience" ObjectPath="\Events\Default Work Unit\Play_Sea_ambience" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="427167346" Language="SFX">
 							<ShortName>the sea.wav</ShortName>
-							<Path>SFX\the sea_10C4C929.wem</Path>
+							<Path>SFX\the sea_4AC43DD7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -249,9 +309,35 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2501377889" Name="Play_Story" ObjectPath="\Events\Default Work Unit\Play_Story" DurationType="OneShot" DurationMin="48.330154" DurationMax="48.330154">
+					<IncludedMemoryFiles>
+						<File Id="875751260" Language="SFX">
+							<ShortName>story_lukas.wav</ShortName>
+							<Path>SFX\story_lukas_A5EFB1DB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3943614907" Name="Play_Success" ObjectPath="\Events\Default Work Unit\Play_Success" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="35491460" Language="SFX">
+							<ShortName>Monster Hunter 3 [Tri] Soundtrack - Success!!! HD.wav</ShortName>
+							<Path>SFX\Monster Hunter 3 [Tri] Soundtrack - Success!!! HD_BED239A0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="571912292" Language="SFX">
+					<ShortName>wolfi_HELP.wav</ShortName>
+					<Path>SFX\wolfi_HELP_E2E8A091.wem</Path>
+				</File>
+				<File Id="620583632" Language="SFX">
+					<ShortName>vicky_swords.wav</ShortName>
+					<Path>SFX\vicky_swords_07D0B147.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3939431405">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1402345089">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

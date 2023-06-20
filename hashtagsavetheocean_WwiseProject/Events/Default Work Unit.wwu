@@ -201,6 +201,94 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Hurt" ID="{47238E96-4392-40C3-B150-FA8F2812EF6B}">
+					<ChildrenList>
+						<Action Name="" ID="{E62ED4F0-68C4-4DD5-97C8-C4992950204C}" ShortID="615671811">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hurt" ID="{9A1CB5A2-9B3E-4BE4-9562-05D9276FEBA7}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Success" ID="{01665F5A-6B5F-445B-898E-DF2C531E32DB}">
+					<ChildrenList>
+						<Action Name="" ID="{2C60018A-77A0-482A-9C95-FF2F286E48A4}" ShortID="416160712">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success" ID="{C8794FA2-B5FF-40E5-B5DE-98D7F8982A73}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Heaven" ID="{7C147D23-6B01-4A20-8C3E-82D4B63AF0D5}">
+					<ChildrenList>
+						<Action Name="" ID="{2084E81C-9296-4008-A63C-5F524AEE5C76}" ShortID="272830619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heaven" ID="{4FE3B424-B113-47C0-986D-F2E13D65F9B8}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerHelp" ID="{8D277DEA-6768-48BC-805E-1E0380848D4B}">
+					<ChildrenList>
+						<Action Name="" ID="{E4254760-537F-46D4-920A-937FCC7F3E6D}" ShortID="1028364745">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerHelp" ID="{EE0C36CA-E956-4DD0-A1D0-269499442C60}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OgreTHX" ID="{97CED85F-D375-4FE6-9563-DE01CABCC0DB}">
+					<ChildrenList>
+						<Action Name="" ID="{29F11E59-B5E5-4F9E-A4BC-1B83182A712B}" ShortID="489709498">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OgreTHX" ID="{5D69EEEA-5653-48B7-AA12-8AB5E6C8F64B}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HolySwords" ID="{6D568888-12FB-4CE1-BF9D-225245B070D7}">
+					<ChildrenList>
+						<Action Name="" ID="{D6479745-73B0-4D6D-8E08-C3F1610526BD}" ShortID="1060897096">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HolySwords" ID="{85AF6230-5A94-4A9F-BF48-32FE46DDF3D9}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Gameplay" ID="{D4D832C1-E96B-47B7-BB07-2B889BBCA8CE}">
+					<ChildrenList>
+						<Action Name="" ID="{92C29F06-3774-43FF-A41E-852D321B14FD}" ShortID="680184152">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gameplay" ID="{63A23FBE-DD5B-4D85-8F73-BC8B61ABF783}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Story" ID="{E1C698B3-BB62-4E7C-8EBC-F2730DAA612E}">
+					<ChildrenList>
+						<Action Name="" ID="{D14690EA-E514-4339-9D9D-47499715B800}" ShortID="246348020">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Story" ID="{349650CF-E2EE-4A4F-94D6-E9C921546071}" WorkUnitID="{03650C9D-3568-4E1C-8EF3-EAE368C428B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

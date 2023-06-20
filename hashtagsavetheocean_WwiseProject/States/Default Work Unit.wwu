@@ -19,6 +19,12 @@
 							<Time>5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
+						<Transition>
+							<StartState Name="scene" ID="{882FC5AA-C0A4-4CFC-B73E-46A9EF53E8BF}"/>
+							<EndState Name="bossfight" ID="{28F82439-8092-49F1-97BE-46D26CCE8F91}"/>
+							<Time>15</Time>
+							<IsShared>false</IsShared>
+						</Transition>
 					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
