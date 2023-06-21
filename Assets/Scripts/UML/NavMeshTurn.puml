@@ -1,5 +1,6 @@
 @startuml
 class NavMeshTurn {
+    + garbage : GameObject[]
     - OnTriggerEnter(other:Collider) : void
 }
 MonoBehaviour <|-- NavMeshTurn

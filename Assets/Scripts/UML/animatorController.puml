@@ -1,0 +1,10 @@
+@startuml
+class animatorController {
+    - animator : Animator
+    + agent : NavMeshAgent
+    - bHR : BossHitRange
+    - Start() : void
+    - Update() : void
+}
+MonoBehaviour <|-- animatorController
+@enduml

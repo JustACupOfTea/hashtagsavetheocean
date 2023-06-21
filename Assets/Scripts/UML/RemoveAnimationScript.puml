@@ -1,0 +1,6 @@
+@startuml
+class RemoveAnimationScript {
+    + OnGrabRemoveScript() : void
+}
+MonoBehaviour <|-- RemoveAnimationScript
+@enduml

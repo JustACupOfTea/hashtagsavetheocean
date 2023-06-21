@@ -1,8 +1,28 @@
 @startuml
-!include .\\AI_NPC.puml
-!include .\\CharacterMovementHelp.puml
-!include .\\EnemySpawn.puml
 !include .\\LevelChange.puml
-!include .\\NavMeshTurn.puml
-!include .\\NPCDespawn.puml
+!include .\\Boss\AI_Boss.puml
+!include .\\Boss\animatorController.puml
+!include .\\Boss\BossHitbox.puml
+!include .\\Boss\BossHitRange.puml
+!include .\\Boss\BossStats.puml
+!include .\\GarbagePathFinding\Animation.puml
+!include .\\GarbagePathFinding\EaseInOut.puml
+!include .\\GarbagePathFinding\Grid.puml
+!include .\\GarbagePathFinding\Node.puml
+!include .\\GarbagePathFinding\Pathfinding.puml
+!include .\\GarbagePathFinding\RemoveAnimationScript.puml
+!include .\\NPCs\AI_NPC.puml
+!include .\\NPCs\EnemySpawn.puml
+!include .\\NPCs\NavMeshTurn.puml
+!include .\\NPCs\NPCDespawn.puml
+!include .\\Player\CharacterMovementHelp.puml
+!include .\\Player\CollectGarbage.puml
+!include .\\Player\DontDestroy.puml
+!include .\\SoundScript\GrabSword.puml
+!include .\\SoundScript\PressButtonStory.puml
+!include .\\UI\HealthBarBoss.puml
+!include .\\UI\HealthBarPlayer.puml
+!include .\\UI\IncreaseScore.puml
+!include .\\UI\PlayerStats.puml
+!include .\\UI\Timer.puml
 @enduml

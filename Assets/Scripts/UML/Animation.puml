@@ -1,0 +1,14 @@
+@startuml
+class Animation {
+    + aStar : GameObject
+    + gridPath : Pathfinding
+    - _currentPathID : int = 0
+    - _nextPathID : int = 1
+    - _rotateSpeed : float = 3.0f
+    - _accumulatedTime : float = 0.0f
+    - Start() : void
+    - Update() : void
+    - WalkForward() : void
+}
+MonoBehaviour <|-- Animation
+@enduml

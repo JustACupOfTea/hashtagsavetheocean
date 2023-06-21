@@ -1,0 +1,11 @@
+@startuml
+class AI_Boss {
+    + {static} instance : AI_Boss
+    - navMeshAgent : NavMeshAgent
+    + prey : GameObject
+    - Awake() : void
+    - Start() : void
+    - Update() : void
+}
+MonoBehaviour <|-- AI_Boss
+@enduml

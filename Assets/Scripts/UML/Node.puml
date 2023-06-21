@@ -1,0 +1,13 @@
+@startuml
+class Node {
+    + isWalkable : bool
+    + position : Vector3 <<get>>
+    + gridX : int <<get>>
+    + gridY : int <<get>>
+    + gCost : int
+    + hCost : int
+    + parent : Node
+    + Node(walk:bool, pos:Vector3, gX:int, gY:int)
+    + fCost : int <<get>>
+}
+@enduml

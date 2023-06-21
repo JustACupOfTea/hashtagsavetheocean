@@ -1,0 +1,27 @@
+@startuml
+class PlayerStats {
+    + {static} instance : PlayerStats
+    + playerHealth : int <<get>>
+    + score : int <<get>>
+    + timer : float <<get>>
+    + bossFightTriggered : bool <<get>>
+    + finished : bool
+    + started : bool
+    + maxHealth : int = 100
+    + startTime : float
+    - level : string
+    - hpBar : HealthBarPlayer
+    - hpBarBoss : HealthBarBoss
+    - bossName : Text
+    + boss : GameObject
+    + bossSpawnPoint : Vector3
+    + weapon : GameObject
+    - Awake() : void
+    - Update() : void
+    + ReduceHealth(reduceBy:int) : void
+    + IncreaseHealth(increaseBy:int) : void
+    + IncreaseScore(increaseBy:int) : void
+    + ResetPlayerStats() : void
+}
+MonoBehaviour <|-- PlayerStats
+@enduml

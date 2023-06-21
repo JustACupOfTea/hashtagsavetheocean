@@ -1,0 +1,10 @@
+@startuml
+class Timer {
+    + timerText : Text
+    - Start() : void
+    - Update() : void
+    + Finish() : void
+    + StartGame() : void
+}
+MonoBehaviour <|-- Timer
+@enduml

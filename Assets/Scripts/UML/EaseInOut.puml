@@ -1,0 +1,5 @@
+@startuml
+class EaseInOut {
+    + {static} MoveTowardSmoothstep(source:Vector3, target:Vector3, t:float) : Vector3
+}
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+class HealthBarBoss {
+    + slider : Slider
+    + gradient : Gradient
+    + fill : Image
+    + SetMaxHealth() : void
+    + SetHealth(playerHealth:float) : void
+}
+MonoBehaviour <|-- HealthBarBoss
+@enduml

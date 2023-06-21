@@ -1,0 +1,14 @@
+@startuml
+class Pathfinding {
+    - _grid : Grid
+    + hunter : Transform
+    + prey : Vector3
+    + path : List<Node>
+    - Start() : void
+    - Update() : void
+    - FindPath(startPos:Vector3, targetPos:Vector3) : void
+    - GetDistance(a:Node, b:Node) : int
+    - RetracePath(start:Node, end:Node) : void
+}
+MonoBehaviour <|-- Pathfinding
+@enduml

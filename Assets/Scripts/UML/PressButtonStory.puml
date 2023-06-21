@@ -1,0 +1,6 @@
+@startuml
+class PressButtonStory {
+    + PlayStory() : void
+}
+MonoBehaviour <|-- PressButtonStory
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+class Grid {
+    + unwalkableMask : LayerMask
+    + gridSize : Vector2
+    + cellSize : float
+    - _grid : Node[,]
+    - nodeCountX : int
+    - nodeCountY : int
+    + paths : List<List<Node>>
+    - OnDrawGizmos() : void
+    - Awake() : void
+    - Update() : void
+    - CreateGrid() : void
+    + NodeFromWorldPoint(worldPosition:Vector3) : Node
+    + GetNeigbors(n:Node) : List<Node>
+}
+MonoBehaviour <|-- Grid
+@enduml

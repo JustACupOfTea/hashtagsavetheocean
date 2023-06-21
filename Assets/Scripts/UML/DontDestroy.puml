@@ -1,0 +1,7 @@
+@startuml
+class DontDestroy {
+    + {static} player : GameObject
+    - Awake() : void
+}
+MonoBehaviour <|-- DontDestroy
+@enduml

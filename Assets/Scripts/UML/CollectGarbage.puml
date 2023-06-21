@@ -1,0 +1,6 @@
+@startuml
+class CollectGarbage {
+    - OnCollisionEnter(other:Collision) : void
+}
+MonoBehaviour <|-- CollectGarbage
+@enduml

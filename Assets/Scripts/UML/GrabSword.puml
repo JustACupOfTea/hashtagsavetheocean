@@ -1,0 +1,6 @@
+@startuml
+class GrabSword {
+    + PlaySwordSound() : void
+}
+MonoBehaviour <|-- GrabSword
+@enduml
