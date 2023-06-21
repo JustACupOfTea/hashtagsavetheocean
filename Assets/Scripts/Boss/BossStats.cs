@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ * This class handles the stats of the boss and what happens if the boss dies
+ */
 public class BossStats : MonoBehaviour
 {
     public static BossStats instance;
@@ -32,6 +35,7 @@ public class BossStats : MonoBehaviour
     
     public void ReduceHealth(int reduceBy)
     {
+        // Reduce the boss health and play sounds -> This function handles non-lethal blows
         bossHealth -= reduceBy;
         hpBarBoss.SetHealth(bossHealth);
         AkSoundEngine.PostEvent("Play_Slash", gameObject);
@@ -40,6 +44,7 @@ public class BossStats : MonoBehaviour
     
     public IEnumerator ReduceHealthDeath(int reduceBy)
     {
+        // Reduce the boss health, play sounds and start loading the victory scene -> Lethal blows
         bossHealth -= reduceBy;
         hpBarBoss.SetHealth(bossHealth);
         timer.Finish();

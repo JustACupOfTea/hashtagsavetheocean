@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This node class defines all variables and functions a node on the grid has
+ */
 public class Node
 {
 

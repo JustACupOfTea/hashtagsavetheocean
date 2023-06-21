@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class smoothens the animation of the animation class
+ */
     public class EaseInOut
     {
         public static Vector3 MoveTowardSmoothstep(Vector3 source, Vector3 target, float t)

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * This class update the healthbar of the boss within ui
+ */
 public class HealthBarBoss : MonoBehaviour
 {
    
@@ -11,7 +14,6 @@ public class HealthBarBoss : MonoBehaviour
     public Image fill;
 
     
-
     public void SetMaxHealth()
     {
         slider.maxValue = BossStats.instance.bossHealth;

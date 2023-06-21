@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/*
+ * This class updates the timer within the ui and adjusts its color depending on the state of the game
+ */
 public class Timer : MonoBehaviour
 {
     public Text timerText;

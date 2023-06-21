@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script handles the hitbox of the boss, so that the player is able to hit him
+ */
 public class BossHitbox : MonoBehaviour
 {
     [SerializeField] public int playerDamageToBoss;
@@ -20,9 +23,10 @@ public class BossHitbox : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        // Check if the player has hit the boss with the swords and if enough time has passed since the last hit
         if (other.gameObject.CompareTag("Sword") && timePassedSinceLastHit>damageInterval)
         {
-            Debug.Log("DMG");
+            // Check if it is the final blow
             if (BossStats.instance.bossHealth - playerDamageToBoss <= 0)
             {
                 StartCoroutine(BossStats.instance.ReduceHealthDeath(playerDamageToBoss));

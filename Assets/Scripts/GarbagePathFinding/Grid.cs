@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+/*
+ * This class creates a grid on a plane, so that the A* is the able to calculate paths
+ */
 public class Grid : MonoBehaviour
 {
     public LayerMask unwalkableMask;
