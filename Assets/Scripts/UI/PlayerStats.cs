@@ -58,7 +58,7 @@ public class PlayerStats : MonoBehaviour
         {
             instance = this;
             score = 0;
-            playerHealth = git a0;
+            playerHealth = 0;
             timer = 0;
             finished = false;
             started = false;

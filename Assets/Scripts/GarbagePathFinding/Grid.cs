@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Grid : MonoBehaviour
@@ -12,6 +13,7 @@ public class Grid : MonoBehaviour
     
     
     private int nodeCountX, nodeCountY;
+    public List<List<Node>> paths = new List<List<Node>>();
 
     // For debugging reasons and to better visualize the grid
     private void OnDrawGizmos()
@@ -24,6 +26,11 @@ public class Grid : MonoBehaviour
             foreach (Node n  in _grid)
             {
                 Gizmos.color = n.isWalkable ? Color.white : Color.red;
+                foreach (List<Node> path in paths)
+                {
+                    if (path.Contains(n))
+                        Gizmos.color = Color.blue;
+                }
                 Vector3 gizPos = n.position;
                 Gizmos.DrawCube(gizPos, Vector3.one * (cellSize-.1f));
             }

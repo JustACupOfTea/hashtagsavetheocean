@@ -26,6 +26,11 @@ public class Animation : MonoBehaviour
         if (gridPath.path.Count <= 1)
             return;
         WalkForward();
+        if (_currentPathID == _nextPathID)
+        {
+            Destroy(gameObject);
+            PlayerStats.instance.IncreaseHealth(10);
+        }
     }
 
     void WalkForward()
@@ -44,17 +49,11 @@ public class Animation : MonoBehaviour
         {
             // Increase the current and next id and check if the path end has been reached
             _currentPathID++;
-            if (_currentPathID <= gridPath.path.Count - 3)
+            if (_currentPathID < gridPath.path.Count-1)
             {
                 _nextPathID++;
                 _accumulatedTime = 0;
             }
-            else
-            {
-                Destroy(gameObject);
-                PlayerStats.instance.IncreaseHealth(10);
-            }
-            
         }
     }
 }

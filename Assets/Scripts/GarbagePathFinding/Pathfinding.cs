@@ -123,6 +123,7 @@ public class Pathfinding : MonoBehaviour
 
         p.Reverse();
         path = p;
+        _grid.paths.Add(path);
     }
     
 }

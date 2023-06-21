@@ -25,8 +25,8 @@ public class LevelChange : MonoBehaviour
         if (level == "StartScreen")
         {
             AkSoundEngine.StopAll();
-            AkSoundEngine.PostEvent("Play_Lobby_theme", gameObject);
-            AkSoundEngine.SetState("music", "lobby");
+            //AkSoundEngine.PostEvent("Play_Lobby_theme", gameObject);
+            //AkSoundEngine.SetState("music", "lobby");
             PlayerStats.instance.ResetPlayerStats();
         }else if (level == "SampleScene")
         {
