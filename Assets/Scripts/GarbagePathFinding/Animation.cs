@@ -4,6 +4,9 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
+/*
+ * This class uses the path calculated from the A* to travel to the destination
+ */
 public class Animation : MonoBehaviour
 {
     public GameObject aStar;
@@ -14,20 +17,24 @@ public class Animation : MonoBehaviour
     private float _rotateSpeed = 3.0f;
     private float _accumulatedTime = 0.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
         // Quit if there is no path
         if (gridPath.path.Count <= 1)
             return;
+        
         WalkForward();
+        
+        // If the destination is reached the object gets destroyed
         if (_currentPathID == _nextPathID)
         {
+            uint[] playingIds = new uint[1];
+            uint count = (uint)playingIds.Length;
+            // Get all playing ids from currently playing sounds on this object
+            AkSoundEngine.GetPlayingIDsFromGameObject(transform.GetChild(0).gameObject, ref count, playingIds);
+            uint playingId = playingIds[0];
+            AkSoundEngine.StopPlayingID(playingId);
             Destroy(gameObject);
             PlayerStats.instance.IncreaseHealth(10);
         }
@@ -47,7 +54,7 @@ public class Animation : MonoBehaviour
         
         if (transform.position == gridPath.path[_nextPathID].position)
         {
-            // Increase the current and next id and check if the path end has been reached
+            // Increase the current and check if the path end has been reached -> If not increase the next id
             _currentPathID++;
             if (_currentPathID < gridPath.path.Count-1)
             {

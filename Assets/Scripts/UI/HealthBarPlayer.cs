@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * This class update the healthbar of the player within ui
+ */
 public class HealthBarPlayer : MonoBehaviour
 {
    

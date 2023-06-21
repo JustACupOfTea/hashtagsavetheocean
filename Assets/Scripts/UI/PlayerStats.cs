@@ -6,6 +6,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ * This class handles the stats of the player, since it is within the XR object it isn't destroyed on load
+ */
 public class PlayerStats : MonoBehaviour
 {
     
@@ -84,9 +87,11 @@ public class PlayerStats : MonoBehaviour
         playerHealth -= reduceBy;
         hpBar.SetHealth(playerHealth);
         AkSoundEngine.PostEvent("Play_Hurt", gameObject);
+        
         // Check if player died
         if (playerHealth <= 0 && bossFightTriggered)
         {
+            // Load defeat screen and play the corresponding music
             playerHealth = 0;
             finished = true;
             transform.GetComponentInChildren<Timer>().Finish();
@@ -115,7 +120,7 @@ public class PlayerStats : MonoBehaviour
         // Check if the boss fight should start
         if (playerHealth >= maxHealth && !bossFightTriggered)
         {
-            //Spawn boss
+            //Spawn boss and set his stats
             boss.GetComponent<AI_Boss>().prey = GameObject.Find("XR Origin");
             boss.GetComponent<BossStats>().hpBarBoss = hpBarBoss;
             boss.GetComponent<BossStats>().bossName = bossName;

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
+ * This class uses the navmesh agent to help the npcs get to their target position
+ */
 public class AI_NPC : MonoBehaviour
 {
     private NavMeshAgent navMeshAgent;

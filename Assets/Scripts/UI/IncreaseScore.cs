@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/*
+ * This class updates the score in the ui within ui
+ */
 public class IncreaseScore : MonoBehaviour
 {
 

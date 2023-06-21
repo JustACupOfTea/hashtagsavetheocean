@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/*
+ * Within this class a path to a certaim location on the grid gets calculated
+ */
 public class Pathfinding : MonoBehaviour
 {
     private Grid _grid;
