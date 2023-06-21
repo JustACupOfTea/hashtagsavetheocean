@@ -115,7 +115,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -497,9 +497,6 @@ MonoBehaviour:
   hpBar: {fileID: 3146284777072306776}
   hpBarBoss: {fileID: 1761209196007126859}
   bossName: {fileID: 3060664306744586858}
-  boss: {fileID: 1154229632722755322, guid: 757b146932bccf74db001c27df74d6a9, type: 3}
-  bossSpawnPoint: {x: 17.6, y: -16.53, z: -58.8}
-  weapon: {fileID: 5627051813632737782, guid: c907e5c780213e64eb69f330dc65f4b1, type: 3}
 --- !u!1 &5969782123187081787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,7 +1923,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6576574996544697559}
-  - component: {fileID: 5635199034656172734}
   m_Layer: 6
   m_Name: XR
   m_TagString: Untagged
@@ -1951,18 +1947,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5635199034656172734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6576574996544697552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1466d653fb19f44bbf0237d4c3be987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6707766201032053046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,6 +2340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TunnelingVignette
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581377, guid: 1670dca8ee98f864eb412b51a24c08e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8429981633443581382, guid: 1670dca8ee98f864eb412b51a24c08e1,
         type: 3}

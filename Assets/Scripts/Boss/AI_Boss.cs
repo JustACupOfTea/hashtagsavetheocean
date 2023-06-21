@@ -27,6 +27,7 @@ public class AI_Boss : MonoBehaviour
     void Update()
     {
         // Update the destination to prey position
+        transform.LookAt(prey.transform);
         navMeshAgent.SetDestination(prey.transform.position);
         transform.position = navMeshAgent.nextPosition;
     }

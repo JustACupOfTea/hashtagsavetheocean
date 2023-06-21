@@ -43,17 +43,14 @@ public class PlayerStats : MonoBehaviour
     public int maxHealth = 100;
     public float startTime;
 
-    //Boss fight
-   
-   [SerializeField] private string level;
-   [SerializeField] HealthBarPlayer hpBar;
+    [SerializeField] private string level;
+    //Boss ui
+    [SerializeField] HealthBarPlayer hpBar;
    [SerializeField] HealthBarBoss hpBarBoss;
    [SerializeField] private Text bossName;
+
+   private StartBossFight _startBossFight;
    
-   public GameObject boss;
-    public Vector3 bossSpawnPoint;
-    public GameObject weapon;
-    
     // Start is called before the first frame update
     void Awake()
     {
@@ -120,43 +117,8 @@ public class PlayerStats : MonoBehaviour
         // Check if the boss fight should start
         if (playerHealth >= maxHealth && !bossFightTriggered)
         {
-            //Spawn boss and set his stats
-            boss.GetComponent<AI_Boss>().prey = GameObject.Find("XR Origin");
-            boss.GetComponent<BossStats>().hpBarBoss = hpBarBoss;
-            boss.GetComponent<BossStats>().bossName = bossName;
-            boss.GetComponent<BossStats>().timer = transform.GetComponentInChildren<Timer>();
-            Instantiate(boss, bossSpawnPoint, Quaternion.identity);
-            hpBarBoss.SetMaxHealth();
-            hpBarBoss.gameObject.SetActive(true);
-            bossName.gameObject.SetActive(true);
-
-            //Spawn swords
-            Vector3 weaponSpawn;
-            Vector3 playerPos = transform.parent.transform.position;
-            if (score >= 200)
-            {
-                AkSoundEngine.PostEvent("Play_Heaven", gameObject);
-                AkSoundEngine.PostEvent("Play_HolySwords", gameObject);
-                weaponSpawn = new Vector3(playerPos.x+2, playerPos.y+10,playerPos.z);
-                Instantiate(weapon, weaponSpawn, Quaternion.identity);
-                if (score >= 400)
-                {
-                    weaponSpawn = new Vector3(playerPos.x-2, playerPos.y+10,playerPos.z);
-                    Instantiate(weapon, weaponSpawn, Quaternion.identity);
-                    if (score >= 600)
-                    {
-                        weaponSpawn = new Vector3(playerPos.x, playerPos.y+10,playerPos.z+2);
-                        Instantiate(weapon, weaponSpawn, Quaternion.identity);
-                        if (score >= 800)
-                        {
-                            weaponSpawn = new Vector3(playerPos.x, playerPos.y+10,playerPos.z-2);
-                            Instantiate(weapon, weaponSpawn, Quaternion.identity);
-                        }
-                    }
-                }
-            }
-            
-
+            _startBossFight = GameObject.Find("BossFightDetails").GetComponent<StartBossFight>();
+            _startBossFight.InitiateBossFight(score, hpBarBoss, bossName, transform.GetComponentInChildren<Timer>(),transform.parent.transform.position);
             playerHealth = maxHealth;
             bossFightTriggered = true;
         }
