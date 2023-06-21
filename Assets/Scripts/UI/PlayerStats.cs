@@ -57,8 +57,8 @@ public class PlayerStats : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            score = 0;
-            playerHealth = 0;
+            score = 200;
+            playerHealth = 90;
             timer = 0;
             finished = false;
             started = false;
@@ -67,6 +67,11 @@ public class PlayerStats : MonoBehaviour
             hpBar.SetHealth(playerHealth);
             hpBarBoss.gameObject.SetActive(false);
             bossName.gameObject.SetActive(false);
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -118,7 +123,7 @@ public class PlayerStats : MonoBehaviour
         if (playerHealth >= maxHealth && !bossFightTriggered)
         {
             _startBossFight = GameObject.Find("BossFightDetails").GetComponent<StartBossFight>();
-            _startBossFight.InitiateBossFight(score, hpBarBoss, bossName, transform.GetComponentInChildren<Timer>(),transform.parent.transform.position);
+            _startBossFight.InitiateBossFight(score, hpBarBoss, bossName, GameObject.Find("Timer Text").GetComponent<Timer>(),GameObject.Find("XR Origin").transform.position);
             playerHealth = maxHealth;
             bossFightTriggered = true;
         }
