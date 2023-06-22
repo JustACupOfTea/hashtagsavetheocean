@@ -1,0 +1,15 @@
+@startuml
+class BossHitRange {
+    + damageInterval : float
+    + damageToPlayer : int
+    + hittingPlayer : bool
+    + timePassedSinceLastHit : float = 0
+    - animator : Animator
+    - hasHit : bool
+    - Start() : void
+    - Update() : void
+    - OnTriggerEnter(other:Collider) : void
+    - OnTriggerExit(other:Collider) : void
+}
+MonoBehaviour <|-- BossHitRange
+@enduml

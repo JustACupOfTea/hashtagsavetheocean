@@ -5,6 +5,7 @@
 !include .\\Boss\BossHitbox.puml
 !include .\\Boss\BossHitRange.puml
 !include .\\Boss\BossStats.puml
+!include .\\Boss\StartBossFight.puml
 !include .\\GarbagePathFinding\Animation.puml
 !include .\\GarbagePathFinding\EaseInOut.puml
 !include .\\GarbagePathFinding\Grid.puml
@@ -17,7 +18,7 @@
 !include .\\NPCs\NPCDespawn.puml
 !include .\\Player\CharacterMovementHelp.puml
 !include .\\Player\CollectGarbage.puml
-!include .\\Player\DontDestroy.puml
+!include .\\Player\SetNewCamera.puml
 !include .\\SoundScript\GrabSword.puml
 !include .\\SoundScript\PressButtonStory.puml
 !include .\\UI\HealthBarBoss.puml

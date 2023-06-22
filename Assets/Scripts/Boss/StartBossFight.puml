@@ -1,0 +1,9 @@
+@startuml
+class StartBossFight {
+    + boss : GameObject
+    + bossSpawnPoint : Vector3
+    + weapon : GameObject
+    + InitiateBossFight(score:int, hpBarBoss:HealthBarBoss, bossName:Text, timer:Timer, playerPos:Vector3) : void
+}
+MonoBehaviour <|-- StartBossFight
+@enduml

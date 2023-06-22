@@ -13,9 +13,7 @@ class PlayerStats {
     - hpBar : HealthBarPlayer
     - hpBarBoss : HealthBarBoss
     - bossName : Text
-    + boss : GameObject
-    + bossSpawnPoint : Vector3
-    + weapon : GameObject
+    - _startBossFight : StartBossFight
     - Awake() : void
     - Update() : void
     + ReduceHealth(reduceBy:int) : void

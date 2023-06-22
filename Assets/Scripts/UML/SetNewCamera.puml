@@ -1,0 +1,7 @@
+@startuml
+class SetNewCamera {
+    + {static} player : GameObject
+    - Awake() : void
+}
+MonoBehaviour <|-- SetNewCamera
+@enduml

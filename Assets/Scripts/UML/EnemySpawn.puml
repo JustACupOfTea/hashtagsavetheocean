@@ -5,7 +5,6 @@ class EnemySpawn {
     + spawnInterval : float
     - spawnedEnemy : GameObject
     - timePassedSinceLastSpawnTry : float = 0
-    - Start() : void
     - Update() : void
     - SpawnEnemy(position:Vector3) : void
 }

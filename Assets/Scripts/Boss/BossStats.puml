@@ -1,0 +1,16 @@
+@startuml
+class BossStats {
+    + {static} instance : BossStats
+    + bossHealth : int
+    + level : string
+    + hpBarBoss : HealthBarBoss
+    + bossName : Text
+    + timer : Timer
+    - Awake() : void
+    - Start() : void
+    - Update() : void
+    + ReduceHealth(reduceBy:int) : void
+    + ReduceHealthDeath(reduceBy:int) : IEnumerator
+}
+MonoBehaviour <|-- BossStats
+@enduml

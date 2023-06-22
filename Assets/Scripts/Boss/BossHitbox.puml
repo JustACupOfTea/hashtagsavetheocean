@@ -1,0 +1,11 @@
+@startuml
+class BossHitbox {
+    + playerDamageToBoss : int
+    + damageInterval : float
+    + timePassedSinceLastHit : float = 0
+    - Start() : void
+    - Update() : void
+    - OnTriggerEnter(other:Collider) : void
+}
+MonoBehaviour <|-- BossHitbox
+@enduml

@@ -6,7 +6,6 @@ class Animation {
     - _nextPathID : int = 1
     - _rotateSpeed : float = 3.0f
     - _accumulatedTime : float = 0.0f
-    - Start() : void
     - Update() : void
     - WalkForward() : void
 }
